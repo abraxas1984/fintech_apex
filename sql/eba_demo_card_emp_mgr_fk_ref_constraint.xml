@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="e6f3840a492c4b90b193192305579221bb5ef8be" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleRefConstraint objectName="EBA_DEMO_CARD_EMP_MGR_FK" objectType="REF_CONSTRAINT" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "CRAFTSHARP"."EBA_DEMO_CARD_EMP" ADD CONSTRAINT "EBA_DEMO_CARD_EMP_MGR_FK" FOREIGN KEY ("MGR")
+	  REFERENCES "CRAFTSHARP"."EBA_DEMO_CARD_EMP" ("EMPNO") ENABLE]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>

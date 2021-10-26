@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="e5acf2183520356bc6e9959c86857c4ba2489d6b" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOraclePackageBody objectName="DATA_OUT_PIPE" objectType="PACKAGE_BODY" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE BODY "CRAFTSHARP"."DATA_OUT_PIPE" AS
+
+  function get_stock_leanformat( symbol IN VARCHAR2) RETURN VARCHAR2 AS
+
+    L_BLOB           BLOB;
+    L_CLOB           CLOB;
+    L_DEST_OFFSET    INTEGER := 1;
+    L_SRC_OFFSET     INTEGER := 1;
+    L_LANG_CONTEXT   INTEGER := DBMS_LOB.DEFAULT_LANG_CTX;
+    L_WARNING        INTEGER;
+    L_LENGTH         INTEGER;
+BEGIN
+
+    -- create new temporary BLOB
+    DBMS_LOB.CREATETEMPORARY(L_BLOB, FALSE);
+
+    --Select CLOB
+    SELECT CLOB_VAL INTO L_CLOB FROM LEAN_DATA_CSV;
+
+    -- tranform the input CLOB into a BLOB of the desired charset
+    DBMS_LOB.CONVERTTOBLOB( DEST_LOB     => L_BLOB,
+                            SRC_CLOB     => L_CLOB,
+                            AMOUNT       => DBMS_LOB.LOBMAXSIZE,
+                            DEST_OFFSET  => L_DEST_OFFSET,
+                            SRC_OFFSET   => L_SRC_OFFSET,
+                            BLOB_CSID    => NLS_CHARSET_ID('WE8MSWIN1252'),
+                            LANG_CONTEXT => L_LANG_CONTEXT,
+                            WARNING      => L_WARNING
+                          );
+
+    -- determine length for header
+    L_LENGTH := DBMS_LOB.GETLENGTH(L_BLOB);
+
+    -- create response header
+    OWA_UTIL.MIME_HEADER( 'text/csv', FALSE);
+    HTP.P('Content-length: ' || L_LENGTH);
+    HTP.P('Content-Disposition: attachment; filename="export_my_table.csv"');
+
+    OWA_UTIL.HTTP_HEADER_CLOSE;
+
+    -- download the BLOB
+    WPG_DOCLOAD.DOWNLOAD_FILE( L_BLOB );
+
+    -- release BLOB from memory
+    DBMS_LOB.FREETEMPORARY(L_BLOB);
+
+    -- stop APEX
+    APEX_APPLICATION.STOP_APEX_ENGINE;
+    RETURN NUll;
+  EXCEPTION
+    WHEN OTHERS THEN
+      DBMS_LOB.FREETEMPORARY(L_BLOB);
+      RAISE;
+END;
+
+
+    -- TODO: Implementation required for function DATA_OUT_PIPE.get_stock_leanformat
+
+  
+  PROCEDURE EXECUTE_CORE_ACTION 
+(
+  PARAM1 IN VARCHAR2 
+, PARAM2 OUT VARCHAR2 
+) AS 
+BEGIN
+  -- create response header
+    OWA_UTIL.MIME_HEADER( 'text/csv', FALSE);
+    HTP.P('Content-length: ' || 222);
+    HTP.P('Content-Disposition: attachment; filename="export_my_table.csv"');
+
+    OWA_UTIL.HTTP_HEADER_CLOSE;
+
+  
+END EXECUTE_CORE_ACTION;
+
+END DATA_OUT_PIPE;]]></n0:source>
+		</n0:createOraclePackageBody>
+	</changeSet>
+</databaseChangeLog>

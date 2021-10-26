@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="32e221c8d1fb9cd630390aa1db785073dd8bd12b" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleProcedure objectName="STAKE_GET_PRODUCT_LIST" objectType="PROCEDURE" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "CRAFTSHARP"."STAKE_GET_PRODUCT_LIST" 
+is
+
+    l_parameters apex_exec.t_parameters;
+begin
+    --
+    -- Step 1: Perform "Parent" Synchronization. No Parameters (empty array) are passed in.
+    --
+ --   apex_rest_source_sync.dynamic_synchronize_data(
+ --       p_module_static_id => 'Parent',
+ --       p_sync_static_id   => 'Dynamic Execution',
+ --       p_sync_parameters  => l_parameters );
+
+    --
+    -- Step 2: Synchronize "Child" for all changed or new rows of the parent table.
+    --
+    for d in (
+        select 1 as page
+          from dual )
+    loop
+        l_parameters.delete;
+        apex_exec.add_parameter(
+            p_parameters      => l_parameters,
+            p_name            => 'page',
+            p_value           => d.page );
+
+        apex_rest_source_sync.dynamic_synchronize_data(
+            p_module_static_id => 'STAKE_PRODUCTS',
+            p_sync_static_id   => 'Dynamic pager',
+            p_sync_parameters  => l_parameters );
+    end loop;
+end;
+
+]]></n0:source>
+		</n0:createOracleProcedure>
+	</changeSet>
+</databaseChangeLog>

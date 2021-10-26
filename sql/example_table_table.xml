@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="4c34968744ac425a4e7023888bc29502db51acc0" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createSxmlObject objectName="EXAMPLE_TABLE" objectType="TABLE" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
+   <SCHEMA>CRAFTSHARP</SCHEMA>
+   <NAME>EXAMPLE_TABLE</NAME>
+   <RELATIONAL_TABLE>
+      <COL_LIST>
+         <COL_LIST_ITEM>
+            <NAME>LDATETIME</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>40</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>L_OPEN</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <PRECISION>8</PRECISION>
+            <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>L_HIGH</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <PRECISION>8</PRECISION>
+            <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>L_LOW</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <PRECISION>8</PRECISION>
+            <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>L_CLOSE</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <PRECISION>8</PRECISION>
+            <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>L_VOLUME</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
+            <PRECISION>8</PRECISION>
+            <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+      </COL_LIST>
+      <DEFAULT_COLLATION>USING_NLS_COMP</DEFAULT_COLLATION>
+      <PHYSICAL_PROPERTIES>
+         <EXTERNAL_TABLE>
+            <ACCESS_DRIVER_TYPE>ORACLE_LOADER</ACCESS_DRIVER_TYPE>
+            <DEFAULT_DIRECTORY>EXT</DEFAULT_DIRECTORY>
+            <ACCESS_PARAMETERS>RECORDS DELIMITED BY NEWLINE
+    FIELDS TERMINATED BY ','
+  </ACCESS_PARAMETERS>
+            <LOCATION>
+               <LOCATION_ITEM>
+                  <NAME>aml.ax.csv</NAME>
+               </LOCATION_ITEM>
+            </LOCATION>
+         </EXTERNAL_TABLE>
+      </PHYSICAL_PROPERTIES>
+   </RELATIONAL_TABLE>
+</TABLE>]]></n0:source>
+		</n0:createSxmlObject>
+	</changeSet>
+</databaseChangeLog>

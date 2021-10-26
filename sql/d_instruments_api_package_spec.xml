@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="01135f8717cc22d6847040ce257a27daf2572605" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOraclePackageSpec objectName="D_INSTRUMENTS_API" objectType="PACKAGE_SPEC" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE "CRAFTSHARP"."D_INSTRUMENTS_API" 
+is 
+  
+    /* example: 
+        declare 
+            l_key                           varchar2(4000); 
+            l_category                      varchar2(4000); 
+            l_currency                      varchar2(4000); 
+            l_when                          date; 
+        begin 
+        d_instruments_api.get_row ( 
+            p_id                            => 1, 
+            p_key                           => l_key, 
+            p_category                      => l_category, 
+            p_currency                      => l_currency, 
+            p_when                          => l_when 
+            ); 
+        end; 
+    */ 
+ 
+    procedure get_row ( 
+        p_id                           in number, 
+        P_key                          out varchar2, 
+        P_category                     out varchar2, 
+        P_currency                     out varchar2, 
+        P_when                         out date 
+    ); 
+  
+    /* example: 
+        begin 
+        d_instruments_api.insert_row ( 
+            p_id                          => null, 
+            p_key                         => null, 
+            p_category                    => null, 
+            p_currency                    => null, 
+            p_when                        => null 
+            ); 
+        end; 
+    */ 
+ 
+    procedure insert_row  ( 
+        p_id                           in number default null, 
+        p_key                          in varchar2 default null, 
+        p_category                     in varchar2 default null, 
+        p_currency                     in varchar2 default null, 
+        p_when                         in date default null 
+    ); 
+    procedure update_row  ( 
+        p_id                           in number default null, 
+        p_key                          in varchar2 default null, 
+        p_category                     in varchar2 default null, 
+        p_currency                     in varchar2 default null, 
+        p_when                         in date default null 
+    ); 
+    procedure delete_row ( 
+        p_id                           in number 
+    ); 
+end d_instruments_api; 
+]]></n0:source>
+		</n0:createOraclePackageSpec>
+	</changeSet>
+</databaseChangeLog>

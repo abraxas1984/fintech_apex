@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="70212e7c8d50f36dc13c3de08475cc35b9fe0a27" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleFunction objectName="GET_SPARKLINE_SECURITY" objectType="FUNCTION" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE FUNCTION "CRAFTSHARP"."GET_SPARKLINE_SECURITY" 
+(security in VARCHAR2,
+period in VARCHAR2 default '10',
+resolution in VARCHAR2 default 'DAY')
+return VARCHAR2
+is
+l_result VARCHAR2(400);
+begin
+
+select listagg(l_close, ', ') into l_result from example_table where rownum < 25;
+
+
+return  l_result;
+end;
+]]></n0:source>
+		</n0:createOracleFunction>
+	</changeSet>
+</databaseChangeLog>

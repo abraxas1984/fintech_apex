@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="d535ef33d54d42ac54bc1b5ec6e419b9db75e1af" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createSxmlObject objectName="LEAN_DATA_CSV" objectType="VIEW" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  <VIEW xmlns="http://xmlns.oracle.com/ku" version="1.0">
+   <SCHEMA>CRAFTSHARP</SCHEMA>
+   <NAME>LEAN_DATA_CSV</NAME>
+   <DEFAULT_COLLATION>USING_NLS_COMP</DEFAULT_COLLATION>
+   <COL_LIST>
+      <COL_LIST_ITEM>
+         <NAME>CLOB_VAL</NAME>
+      </COL_LIST_ITEM>
+      <COL_LIST_ITEM>
+         <NAME>NUMBER_OF_ROWS</NAME>
+      </COL_LIST_ITEM>
+   </COL_LIST>
+   <SUBQUERY>SELECT
+ XMLCAST(XMLAGG(XMLELEMENT(E,COL_VALUE||CHR(13)||CHR(10))) AS CLOB) AS CLOB_VAL,
+ COUNT(*) AS NUMBER_OF_ROWS
+FROM  (
+ SELECT 'ID;CAR_NAME;CAR_VALUE;CAR_KM' AS COL_VALUE FROM DUAL
+ UNION ALL
+ SELECT ID||';'||
+   PRICING_DATE||';'||
+   PRICING_TIMESTAMP||';'||
+   OPENING_VAL AS COL_VALUE
+ FROM LEAN_DATA_DAY
+)</SUBQUERY>
+</VIEW>]]></n0:source>
+		</n0:createSxmlObject>
+	</changeSet>
+</databaseChangeLog>

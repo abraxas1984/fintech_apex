@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="ab6208c466989b47c965683b3c936a97a6d00b58" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleRefConstraint objectName="INSTRUMENT_FK1" objectType="REF_CONSTRAINT" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "CRAFTSHARP"."INSTRUMENT_HIST" ADD CONSTRAINT "INSTRUMENT_FK1" FOREIGN KEY ("STOCK_CODE")
+	  REFERENCES "CRAFTSHARP"."INSTRUMENT" ("SYMBOL") ENABLE]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>

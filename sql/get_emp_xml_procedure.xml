@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="35bd170c0b9bd56efc9a473fa07b686d0cbffb95" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleProcedure objectName="GET_EMP_XML" objectType="PROCEDURE" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "CRAFTSHARP"."GET_EMP_XML" (p_empno IN emp.empno%TYPE DEFAULT NULL) AS
+  l_clob CLOB;
+BEGIN
+/*
+  SELECT XMLELEMENT("employees",
+           XMLAGG(
+             XMLELEMENT("emp",
+               XMLFOREST(e.empno AS "empno",
+                         e.ename AS "employee_name",
+                         e.job AS "job",
+                         e.mgr AS "mgr",
+                         TO_CHAR(e.hiredate,'YYYY-MM-DD') AS "hiredate",
+                         e.sal AS "sal",
+                         e.comm  AS "comm",
+                         e.deptno AS "deptno"
+               )
+             )
+           )
+         ).getClobVal()
+  INTO   l_clob
+  FROM   emp e
+  WHERE  e.empno = DECODE(p_empno, NULL, e.empno, p_empno);
+
+*/
+  OWA_UTIL.mime_header('text/html',true);
+  HTP.prn('blah');
+  
+
+END;]]></n0:source>
+		</n0:createOracleProcedure>
+	</changeSet>
+</databaseChangeLog>

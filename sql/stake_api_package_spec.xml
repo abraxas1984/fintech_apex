@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="c3999a862df6c6afd9b270300b03c55451ad8004" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOraclePackageSpec objectName="STAKE_API" objectType="PACKAGE_SPEC" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE "CRAFTSHARP"."STAKE_API" AS 
+
+procedure "STAKE_GET_PRODUCT_LIST";
+  /* TODO enter package declarations (types, exceptions, methods etc) here */ 
+
+END STAKE_API;]]></n0:source>
+		</n0:createOraclePackageSpec>
+	</changeSet>
+</databaseChangeLog>

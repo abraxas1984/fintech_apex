@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="31bf7c92323afa1254076f828cc0ea8ac35fb466" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOracleRefConstraint objectName="%OBJECT_NAME%" objectType="REF_CONSTRAINT" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "CRAFTSHARP"."EBA_DEMO_CHART_EMP" ADD FOREIGN KEY ("MGR")
+	  REFERENCES "CRAFTSHARP"."EBA_DEMO_CHART_EMP" ("EMPNO") ENABLE]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>

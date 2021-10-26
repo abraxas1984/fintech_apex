@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="c9ff081ede016f7741ee03ec8737a0d822d48ddb" author="(CRAFTSHARP)-Generated" failOnError="false"    >
+		<n0:createOraclePackageBody objectName="%OBJECT_NAME%" objectType="PACKAGE_BODY" ownerName="CRAFTSHARP"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE BODY "CRAFTSHARP"."D_INSTRUMENTS_API" 
+is 
+  
+    procedure get_row ( 
+        p_id                           in number, 
+        P_key                          out varchar2, 
+        P_category                     out varchar2, 
+        P_currency                     out varchar2, 
+        P_when                         out date 
+    ) 
+    is 
+    begin 
+        for c1 in (select * from craftsharp.d_instruments where id = p_id) loop 
+            p_key := c1.key; 
+            p_category := c1.category; 
+            p_currency := c1.currency; 
+            p_when := c1.when; 
+        end loop; 
+    end get_row; 
+ 
+  
+    procedure insert_row  ( 
+        p_id                           in number default null, 
+        p_key                          in varchar2 default null, 
+        p_category                     in varchar2 default null, 
+        p_currency                     in varchar2 default null, 
+        p_when                         in date default null 
+    ) 
+    is 
+    begin 
+        insert into craftsharp.d_instruments ( 
+            id, 
+            key, 
+            category, 
+            currency, 
+            when 
+        ) values ( 
+            p_id, 
+            p_key, 
+            p_category, 
+            p_currency, 
+            p_when 
+        ); 
+    end insert_row; 
+ 
+    procedure update_row  ( 
+        p_id                           in number default null, 
+        p_key                          in varchar2 default null, 
+        p_category                     in varchar2 default null, 
+        p_currency                     in varchar2 default null, 
+        p_when                         in date default null 
+    ) 
+    is 
+    begin 
+        update  craftsharp.d_instruments set  
+            id = p_id, 
+            key = p_key, 
+            category = p_category, 
+            currency = p_currency, 
+            when = p_when 
+        where id = p_id; 
+    end update_row; 
+ 
+    procedure delete_row ( 
+        p_id                           in number 
+    ) 
+    is 
+    begin 
+        delete from craftsharp.d_instruments where id = p_id; 
+    end delete_row; 
+ 
+end d_instruments_api; 
+]]></n0:source>
+		</n0:createOraclePackageBody>
+	</changeSet>
+</databaseChangeLog>
