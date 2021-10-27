@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="2a7d0af349aaaeb748d40f1e024eeee7aea43c13" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOracleTrigger objectName="EMP_TRG1" objectType="TRIGGER" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE TRIGGER "FINTECH"."EMP_TRG1" 
+              before insert on emp
+              for each row
+              begin
+                  if :new.empno is null then
+                      select emp_seq.nextval into :new.empno from sys.dual;
+                 end if;
+              end;
+
+/
+ALTER TRIGGER "FINTECH"."EMP_TRG1" ENABLE]]></n0:source>
+		</n0:createOracleTrigger>
+	</changeSet>
+</databaseChangeLog>

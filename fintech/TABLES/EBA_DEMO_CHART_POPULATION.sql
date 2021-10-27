@@ -1,0 +1,16 @@
+--------------------------------------------------------
+--  DDL for Table EBA_DEMO_CHART_POPULATION
+--------------------------------------------------------
+
+  CREATE TABLE "EBA_DEMO_CHART_POPULATION" 
+   (	"ID" NUMBER, 
+	"ROW_VERSION_NUMBER" NUMBER, 
+	"STATE_NAME" VARCHAR2(100 BYTE), 
+	"STATE_CODE" VARCHAR2(2 BYTE), 
+	"POPULATION" NUMBER, 
+	"REGION" NUMBER, 
+	"CREATED" TIMESTAMP (6) WITH TIME ZONE, 
+	"CREATED_BY" VARCHAR2(255 BYTE), 
+	"UPDATED" TIMESTAMP (6) WITH TIME ZONE, 
+	"UPDATED_BY" VARCHAR2(255 BYTE)
+   ) ;

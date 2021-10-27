@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table EBA_DEMO_CHART_SAMPLE_NAMES
+--------------------------------------------------------
+
+  ALTER TABLE "EBA_DEMO_CHART_SAMPLE_NAMES" MODIFY ("ID" NOT NULL ENABLE);
+  ALTER TABLE "EBA_DEMO_CHART_SAMPLE_NAMES" MODIFY ("SAMPLE_NAME" NOT NULL ENABLE);
+  ALTER TABLE "EBA_DEMO_CHART_SAMPLE_NAMES" ADD CONSTRAINT "EBA_DEMO_SAMPLES_PK" PRIMARY KEY ("ID")
+  USING INDEX  ENABLE;

@@ -1,0 +1,15 @@
+--------------------------------------------------------
+--  DDL for Table STOCK_EXCHANGES
+--------------------------------------------------------
+
+  CREATE TABLE "STOCK_EXCHANGES" 
+   (	"ID" NUMBER, 
+	"MIC" VARCHAR2(4000 BYTE), 
+	"CODE" VARCHAR2(4000 BYTE), 
+	"NAME" VARCHAR2(4000 BYTE), 
+	"TAPE" VARCHAR2(4000 BYTE), 
+	"TYPE" VARCHAR2(4000 BYTE), 
+	"MARKET" VARCHAR2(4000 BYTE), 
+	"APEX$SYNC_STEP_STATIC_ID" VARCHAR2(255 BYTE), 
+	"APEX$ROW_SYNC_TIMESTAMP" TIMESTAMP (6) WITH TIME ZONE
+   ) ;

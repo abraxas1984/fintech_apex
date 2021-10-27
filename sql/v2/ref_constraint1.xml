@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="c9d18904242c63478403adf6342712f20d73211d" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOracleRefConstraint objectName="%OBJECT_NAME%" objectType="REF_CONSTRAINT" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "FINTECH"."EMP" ADD FOREIGN KEY ("DEPTNO")
+	  REFERENCES "FINTECH"."DEPT" ("DEPTNO") ENABLE]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>

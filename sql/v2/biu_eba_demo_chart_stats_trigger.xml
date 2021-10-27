@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="691509a0730143f962f1e13544dbe329364a0056" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOracleTrigger objectName="BIU_EBA_DEMO_CHART_STATS" objectType="TRIGGER" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE TRIGGER "FINTECH"."BIU_EBA_DEMO_CHART_STATS" 
+   before insert or update on eba_demo_chart_stats
+   for each row
+begin  
+   if :new."ID" is null then
+     select to_number(sys_guid(),'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') into :new.id from dual;
+   end if;
+   if inserting then
+       :new.created := current_timestamp;
+       :new.created_by := nvl(wwv_flow.g_user,user);
+       :new.updated := current_timestamp;
+       :new.updated_by := nvl(wwv_flow.g_user,user);
+   end if;
+   if inserting or updating then
+       :new.updated := current_timestamp;
+       :new.updated_by := nvl(wwv_flow.g_user,user);
+   end if;
+end;
+
+
+/
+ALTER TRIGGER "FINTECH"."BIU_EBA_DEMO_CHART_STATS" ENABLE]]></n0:source>
+		</n0:createOracleTrigger>
+	</changeSet>
+</databaseChangeLog>

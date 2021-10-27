@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table EBA_DEMO_CHART_PROJECTS
+--------------------------------------------------------
+
+  ALTER TABLE "EBA_DEMO_CHART_PROJECTS" MODIFY ("ID" NOT NULL ENABLE);
+  ALTER TABLE "EBA_DEMO_CHART_PROJECTS" MODIFY ("PROJECT" NOT NULL ENABLE);
+  ALTER TABLE "EBA_DEMO_CHART_PROJECTS" ADD CONSTRAINT "EBA_DEMO_CHARTS_PROJ_PK" PRIMARY KEY ("ID")
+  USING INDEX  ENABLE;

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="e1a31e5cb3fef7e41e616f6f16e632443f32232d" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOraclePackageBody objectName="D_BARS_API" objectType="PACKAGE_BODY" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE BODY "FINTECH"."D_BARS_API" 
+is 
+  
+    procedure get_row ( 
+        p_id                           in number, 
+        P_instrument_id                out number, 
+        P_t                            out timestamp, 
+        P_bid                          out number, 
+        P_ask                          out number, 
+        P_volume                       out number, 
+        P_open                         out number, 
+        P_high                         out number, 
+        P_low                          out number, 
+        P_close                        out number, 
+        P_vwap                         out number 
+    ) 
+    is 
+    begin 
+        for c1 in (select * from craftsharp.d_bars where id = p_id) loop 
+            p_instrument_id := c1.instrument_id; 
+            p_t := c1.t; 
+            p_bid := c1.bid; 
+            p_ask := c1.ask; 
+            p_volume := c1.volume; 
+            p_open := c1.open; 
+            p_high := c1.high; 
+            p_low := c1.low; 
+            p_close := c1.close; 
+            p_vwap := c1.vwap; 
+        end loop; 
+    end get_row; 
+
+
+    procedure insert_row  ( 
+        p_id                           in number default null, 
+        p_instrument_id                in number default null, 
+        p_t                            in timestamp default null, 
+        p_bid                          in number default null, 
+        p_ask                          in number default null, 
+        p_volume                       in number default null, 
+        p_open                         in number default null, 
+        p_high                         in number default null, 
+        p_low                          in number default null, 
+        p_close                        in number default null, 
+        p_vwap                         in number default null 
+    ) 
+    is 
+    begin 
+        insert into craftsharp.d_bars ( 
+            id, 
+            instrument_id, 
+            t, 
+            bid, 
+            ask, 
+            volume, 
+            open, 
+            high, 
+            low, 
+            close, 
+            vwap 
+        ) values ( 
+            p_id, 
+            p_instrument_id, 
+            p_t, 
+            p_bid, 
+            p_ask, 
+            p_volume, 
+            p_open, 
+            p_high, 
+            p_low, 
+            p_close, 
+            p_vwap 
+        ); 
+    end insert_row; 
+
+    procedure update_row  ( 
+        p_id                           in number default null, 
+        p_instrument_id                in number default null, 
+        p_t                            in timestamp default null, 
+        p_bid                          in number default null, 
+        p_ask                          in number default null, 
+        p_volume                       in number default null, 
+        p_open                         in number default null, 
+        p_high                         in number default null, 
+        p_low                          in number default null, 
+        p_close                        in number default null, 
+        p_vwap                         in number default null 
+    ) 
+    is 
+    begin 
+        update  craftsharp.d_bars set  
+            id = p_id, 
+            instrument_id = p_instrument_id, 
+            t = p_t, 
+            bid = p_bid, 
+            ask = p_ask, 
+            volume = p_volume, 
+            open = p_open, 
+            high = p_high, 
+            low = p_low, 
+            close = p_close, 
+            vwap = p_vwap 
+        where id = p_id; 
+    end update_row; 
+
+    procedure delete_row ( 
+        p_id                           in number 
+    ) 
+    is 
+    begin 
+        delete from craftsharp.d_bars where id = p_id; 
+    end delete_row; 
+
+end d_bars_api;]]></n0:source>
+		</n0:createOraclePackageBody>
+	</changeSet>
+</databaseChangeLog>

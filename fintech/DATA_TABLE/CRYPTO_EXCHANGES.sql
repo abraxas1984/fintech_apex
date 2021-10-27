@@ -1,0 +1,7 @@
+REM INSERTING into CRYPTO_EXCHANGES
+SET DEFINE OFF;
+Insert into CRYPTO_EXCHANGES (ID,URL,NAME,TIER,LOCALE,MARKET,APEX$SYNC_STEP_STATIC_ID,APEX$ROW_SYNC_TIMESTAMP) values (1,'https://www.coinbase.com','Coinbase','crypto','G','crypto',null,to_timestamp_tz('20/JUN/21 06:55:01.260959000 AM GMT','DD/MON/RR HH12:MI:SSXFF AM TZR'));
+Insert into CRYPTO_EXCHANGES (ID,URL,NAME,TIER,LOCALE,MARKET,APEX$SYNC_STEP_STATIC_ID,APEX$ROW_SYNC_TIMESTAMP) values (2,'https://www.bitfinex.com/','BITFINEX','crypto','G','crypto',null,to_timestamp_tz('20/JUN/21 06:55:01.260959000 AM GMT','DD/MON/RR HH12:MI:SSXFF AM TZR'));
+Insert into CRYPTO_EXCHANGES (ID,URL,NAME,TIER,LOCALE,MARKET,APEX$SYNC_STEP_STATIC_ID,APEX$ROW_SYNC_TIMESTAMP) values (6,'https://www.bitstamp.net/''','Bitstamp','crypto','G','crypto',null,to_timestamp_tz('20/JUN/21 06:55:01.260959000 AM GMT','DD/MON/RR HH12:MI:SSXFF AM TZR'));
+Insert into CRYPTO_EXCHANGES (ID,URL,NAME,TIER,LOCALE,MARKET,APEX$SYNC_STEP_STATIC_ID,APEX$ROW_SYNC_TIMESTAMP) values (10,'https://hitbtc.com/','HitBTC','crypto','G','crypto',null,to_timestamp_tz('20/JUN/21 06:55:01.260959000 AM GMT','DD/MON/RR HH12:MI:SSXFF AM TZR'));
+Insert into CRYPTO_EXCHANGES (ID,URL,NAME,TIER,LOCALE,MARKET,APEX$SYNC_STEP_STATIC_ID,APEX$ROW_SYNC_TIMESTAMP) values (23,'https://www.kraken.com/en-us/','Kraken','crypto','G','crypto',null,to_timestamp_tz('20/JUN/21 06:55:01.260959000 AM GMT','DD/MON/RR HH12:MI:SSXFF AM TZR'));

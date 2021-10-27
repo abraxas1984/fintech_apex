@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="24103fdbbc903d9fdf4c0a0a8f1a1d6fa1521cb2" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOraclePackageSpec objectName="EBA_DEMO_CARD_PKG" objectType="PACKAGE_SPEC" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE "FINTECH"."EBA_DEMO_CARD_PKG" as
+    function get_video_duration (
+        p_video_id in varchar2 ) return varchar2;
+    procedure get_profile_image (
+        p_empno in number);
+end eba_demo_card_pkg;]]></n0:source>
+		</n0:createOraclePackageSpec>
+	</changeSet>
+</databaseChangeLog>

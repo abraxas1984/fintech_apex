@@ -1,0 +1,22 @@
+--------------------------------------------------------
+--  DDL for Table LEAN_DATA_DAY
+--------------------------------------------------------
+
+  CREATE TABLE "LEAN_DATA_DAY" 
+   (	"ID" NUMBER, 
+	"ROW_VERSION_NUMBER" NUMBER, 
+	"STOCK_CODE" VARCHAR2(4 BYTE), 
+	"STOCK_NAME" VARCHAR2(130 BYTE), 
+	"PRICING_DATE" DATE, 
+	"PRICING_TIMESTAMP" TIMESTAMP (6), 
+	"PRICING_TIMESTAMP_TZ" CLOB, 
+	"OPENING_VAL" NUMBER, 
+	"HIGH" NUMBER, 
+	"LOW" NUMBER, 
+	"CLOSING_VAL" NUMBER, 
+	"VOLUME" NUMBER, 
+	"CREATED" CLOB, 
+	"CREATED_BY" VARCHAR2(255 BYTE), 
+	"UPDATED" CLOB, 
+	"UPDATED_BY" VARCHAR2(255 BYTE)
+   ) ;

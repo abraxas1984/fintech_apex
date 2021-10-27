@@ -1,0 +1,1835 @@
+######## ERROR SUMMARY ##################
+Errors encountered:74
+
+dept_seq_sequence.xml::5c888d639cc0192ec492d7257c7943f8ef839f7d::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '5c888d639cc0192ec492d7257c7943f8ef839f7d';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'dept_seq_sequence.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{LS0gb2JqZWN0IGlzIHRoZSBzYW1lIG5vdGhpbmcgdG8gZG8=}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFNFUVVFTkNFIHhtbG5zPSJodHRwOi8veG1sbnMub3JhY2xlLmNvbS9rdSIgdmVyc2lvbj0iMS4wIj4KICAgPFNDSEVNQT5GSU5URUNIPC9TQ0hFTUE+CiAgIDxOQU1FPkRFUFRfU0VRPC9OQU1FPgogICA8U1RBUlRfV0lUSD41MDwvU1RBUlRfV0lUSD4KICAgPElOQ1JFTUVOVD4xPC9JTkNSRU1FTlQ+CiAgIDxNSU5WQUxVRT4xPC9NSU5WQUxVRT4KICAgPE1BWFZBTFVFPjk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk8L01BWFZBTFVFPgogICA8Q0FDSEU+MjA8L0NBQ0hFPgogICA8U0NBTEU+Tk9TQ0FMRTwvU0NBTEU+CjwvU0VRVUVOQ0U+}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+emp_seq_sequence.xml::f7ce34c5d8fe471d94615373758e5999e48b1095::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'f7ce34c5d8fe471d94615373758e5999e48b1095';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'emp_seq_sequence.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{LS0gb2JqZWN0IGlzIHRoZSBzYW1lIG5vdGhpbmcgdG8gZG8=}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFNFUVVFTkNFIHhtbG5zPSJodHRwOi8veG1sbnMub3JhY2xlLmNvbS9rdSIgdmVyc2lvbj0iMS4wIj4KICAgPFNDSEVNQT5GSU5URUNIPC9TQ0hFTUE+CiAgIDxOQU1FPkVNUF9TRVE8L05BTUU+CiAgIDxTVEFSVF9XSVRIPjgwMDA8L1NUQVJUX1dJVEg+CiAgIDxJTkNSRU1FTlQ+MTwvSU5DUkVNRU5UPgogICA8TUlOVkFMVUU+MTwvTUlOVkFMVUU+CiAgIDxNQVhWQUxVRT45OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5PC9NQVhWQUxVRT4KICAgPENBQ0hFPjIwPC9DQUNIRT4KICAgPFNDQUxFPk5PU0NBTEU8L1NDQUxFPgo8L1NFUVVFTkNFPg==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+crypto_exchanges_table.xml::9e9a8d278b1da9a87a53cab2bd08e3317dfcd9f2::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '9e9a8d278b1da9a87a53cab2bd08e3317dfcd9f2';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'crypto_exchanges_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJDUllQVE9fRVhDSEFOR0VTIgogICAoCSJJRCIgTlVNQkVSLAoJIlVSTCIgVkFSQ0hBUjIoNDAwMCksCgkiTkFNRSIgVkFSQ0hBUjIoNDAwMCksCgkiVElFUiIgVkFSQ0hBUjIoNDAwMCksCgkiTE9DQUxFIiBWQVJDSEFSMig0MDAwKSwKCSJNQVJLRVQiIFZBUkNIQVIyKDQwMDApLAoJIkFQRVgkU1lOQ19TVEVQX1NUQVRJQ19JRCIgVkFSQ0hBUjIoMjU1KSwKCSJBUEVYJFJPV19TWU5DX1RJTUVTVEFNUCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+instrument_hist_table.xml::53793abfeee471e0c7101ce1b4d14e4284136451::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '53793abfeee471e0c7101ce1b4d14e4284136451';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'instrument_hist_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJJTlNUUlVNRU5UX0hJU1QiCiAgICgJIklEIiBOVU1CRVIgTk9UIE5VTEwgRU5BQkxFLAoJIlNUT0NLX0NPREUiIFZBUkNIQVIyKDQpLAoJIlNUT0NLX05BTUUiIFZBUkNIQVIyKDEzMCksCgkiUFJJQ0lOR19EQVRFIiBEQVRFLAoJIlBSSUNJTkdfVElNRVNUQU1QIiBUSU1FU1RBTVAoNiksCgkiUFJJQ0lOR19USU1FU1RBTVBfVFoiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiT1BFTklOR19WQUwiIE5VTUJFUiwKCSJISUdIIiBOVU1CRVIsCgkiTE9XIiBOVU1CRVIsCgkiQ0xPU0lOR19WQUwiIE5VTUJFUiwKCSJWT0xVTUUiIE5VTUJFUiwKCUNPTlNUUkFJTlQgIklOU1RSVU1FTlRfSElTVF9QSyIgUFJJTUFSWSBLRVkgKCJJRCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_random_image_table.xml::5e7b0c4bbc8f3f40678a24050a5c6ccc83291f20::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '5e7b0c4bbc8f3f40678a24050a5c6ccc83291f20';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_random_image_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DQVJEX1JBTkRPTV9JTUFHRSIKICAgKAkiSUQiIE5VTUJFUiBERUZBVUxUIHRvX251bWJlcihzeXNfZ3VpZCgpLCAnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSwKCSJVUkwiIFZBUkNIQVIyKDI1NSksCgkiV0lEVEgiIE5VTUJFUiwKCSJBVVRIT1IiIFZBUkNIQVIyKDUwKSwKCSJIRUlHSFQiIE5VTUJFUiwKCSJET1dOTE9BRF9VUkwiIFZBUkNIQVIyKDI1NSksCglDT05TVFJBSU5UICJFQkFfREVNT19DQVJEX1JJTUdfUEsiIFBSSU1BUlkgS0VZICgiSUQiKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_projects_table.xml::afb0d8a7319feb3daa5b3134821f1d2392f34943::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'afb0d8a7319feb3daa5b3134821f1d2392f34943';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_projects_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9QUk9KRUNUUyIKICAgKAkiSUQiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiUFJPSkVDVCIgVkFSQ0hBUjIoMzApIE5PVCBOVUxMIEVOQUJMRSwKCSJST1dfVkVSU0lPTl9OVU1CRVIiIE5VTUJFUiwKCSJDUkVBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRTX1BST0pfUEsiIFBSSU1BUlkgS0VZICgiSUQiKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_samples_table.xml::4cdd2761b2b50c35370adb5d2ccea754e5164a52::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '4cdd2761b2b50c35370adb5d2ccea754e5164a52';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_samples_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9TQU1QTEVTIgogICAoCSJTQU1QTEUxIiBOVU1CRVIsCgkiU0FNUExFMiIgTlVNQkVSLAoJIlNBTVBMRTMiIE5VTUJFUiwKCSJTQU1QTEU0IiBOVU1CRVIsCgkiU0FNUExFNSIgTlVNQkVSCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+lean_data_day_table.xml::147322860484b4f36452085c346b623c33608fc4::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '147322860484b4f36452085c346b623c33608fc4';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'lean_data_day_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJMRUFOX0RBVEFfREFZIgogICAoCSJJRCIgTlVNQkVSLAoJIlJPV19WRVJTSU9OX05VTUJFUiIgTlVNQkVSLAoJIlNUT0NLX0NPREUiIFZBUkNIQVIyKDQpLAoJIlNUT0NLX05BTUUiIFZBUkNIQVIyKDEzMCksCgkiUFJJQ0lOR19EQVRFIiBEQVRFLAoJIlBSSUNJTkdfVElNRVNUQU1QIiBUSU1FU1RBTVAoNiksCgkiUFJJQ0lOR19USU1FU1RBTVBfVFoiIENMT0IsCgkiT1BFTklOR19WQUwiIE5VTUJFUiwKCSJISUdIIiBOVU1CRVIsCgkiTE9XIiBOVU1CRVIsCgkiQ0xPU0lOR19WQUwiIE5VTUJFUiwKCSJWT0xVTUUiIE5VTUJFUiwKCSJDUkVBVEVEIiBDTE9CLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgQ0xPQiwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpCiBMT0IgKCJQUklDSU5HX1RJTUVTVEFNUF9UWiIpIFNUT1JFIEFTIFNFQ1VSRUZJTEUgICgKICBFTkFCTEUgU1RPUkFHRSBJTiBST1cgQ0hVTksgODE5MgogIE5PQ0FDSEUgTE9HR0lORyBOT0NPTVBSRVNTIEtFRVBfRFVQTElDQVRFUwogIFNUT1JBR0UoIElOSVRJQUwgMTA2NDk2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMAogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpKQogTE9CICgiQ1JFQVRFRCIpIFNUT1JFIEFTIFNFQ1VSRUZJTEUgICgKICBFTkFCTEUgU1RPUkFHRSBJTiBST1cgQ0hVTksgODE5MgogIE5PQ0FDSEUgTE9HR0lORyBOT0NPTVBSRVNTIEtFRVBfRFVQTElDQVRFUwogIFNUT1JBR0UoIElOSVRJQUwgMTA2NDk2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMAogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpKQogTE9CICgiVVBEQVRFRCIpIFNUT1JFIEFTIFNFQ1VSRUZJTEUgICgKICBFTkFCTEUgU1RPUkFHRSBJTiBST1cgQ0hVTksgODE5MgogIE5PQ0FDSEUgTE9HR0lORyBOT0NPTVBSRVNTIEtFRVBfRFVQTElDQVRFUwogIFNUT1JBR0UoIElOSVRJQUwgMTA2NDk2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMAogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_grades_table.xml::0447e7d5d6eba42add4039430ab62d346166a01e::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '0447e7d5d6eba42add4039430ab62d346166a01e';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_grades_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9HUkFERVMiCiAgICgJIklEIiBOVU1CRVIsCgkiQ09VUlNFIiBWQVJDSEFSMigxMCksCgkiU0NIT09MQSIgTlVNQkVSLAoJIlNDSE9PTEIiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiU0NIT09MQyIgTlVNQkVSLAoJIkNSRUFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiQ1JFQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCSJVUERBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIlVQREFURURfQlkiIFZBUkNIQVIyKDI1NSkKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_orders_table.xml::c93d7b734b9db8ced866fc20e86f267d25252f07::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'c93d7b734b9db8ced866fc20e86f267d25252f07';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_orders_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9PUkRFUlMiCiAgICgJIk9SREVSX0lEIiBOVU1CRVIgTk9UIE5VTEwgRU5BQkxFLAoJIlBST0RVQ1RfSUQiIE5VTUJFUiwKCSJRVUFOVElUWSIgTlVNQkVSKDgsMCksCgkiQ1VTVE9NRVIiIFZBUkNIQVIyKDMwKSwKCSJTQUxFU19EQVRFIiBEQVRFLAoJIkNSRUFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiQ1JFQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCSJVUERBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIlVQREFURURfQlkiIFZBUkNIQVIyKDI1NSksCglDT05TVFJBSU5UICJFQkFfREVNT19DSEFSVF9PUkRFUl9QSyIgUFJJTUFSWSBLRVkgKCJPUkRFUl9JRCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_population_table.xml::73d3e758b10c0de26d6b2f1b333f2087967791b4::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '73d3e758b10c0de26d6b2f1b333f2087967791b4';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_population_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9QT1BVTEFUSU9OIgogICAoCSJJRCIgTlVNQkVSIE5PVCBOVUxMIEVOQUJMRSwKCSJST1dfVkVSU0lPTl9OVU1CRVIiIE5VTUJFUiwKCSJTVEFURV9OQU1FIiBWQVJDSEFSMigxMDApLAoJIlNUQVRFX0NPREUiIFZBUkNIQVIyKDIpLAoJIlBPUFVMQVRJT04iIE5VTUJFUiwKCSJSRUdJT04iIE5VTUJFUiwKCSJDUkVBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfUE9QX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+stake_products_table.xml::3ede1bd7f15517a3d19ac03fe53b4ea2b5ab2046::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '3ede1bd7f15517a3d19ac03fe53b4ea2b5ab2046';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'stake_products_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJTVEFLRV9QUk9EVUNUUyIKICAgKAkiSUQiIFZBUkNIQVIyKDQwMDApLAoJIk5BTUUiIFZBUkNIQVIyKDQwMDApLAoJIk5FV1MiIE5VTUJFUiwKCSJUWVBFIiBWQVJDSEFSMig0MDAwKSwKCSJCT1VHSFQiIE5VTUJFUiwKCSJQRVJJT0QiIFZBUkNIQVIyKDQwMDApLAoJIlNFQ1RPUiIgVkFSQ0hBUjIoNDAwMCksCgkiU1RBVFVTIiBWQVJDSEFSMig0MDAwKSwKCSJTWU1CT0wiIFZBUkNIQVIyKDQwMDApLAoJIlZJRVdFRCIgTlVNQkVSLAoJIldBVENIRUQiIE5VTUJFUiwKCSJDQVRFR09SWSIgVkFSQ0hBUjIoNDAwMCksCgkiVVJMSU1BR0UiIFZBUkNIQVIyKDQwMDApLAoJIkNVUlJFTkNZSUQiIFZBUkNIQVIyKDQwMDApLAoJIkxBU1RUUkFERUQiIE5VTUJFUiwKCSJQT1BVTEFSSVRZIiBOVU1CRVIsCgkiREFJTFlSRVRVUk4iIE5VTUJFUiwKCSJERVNDUklQVElPTiIgVkFSQ0hBUjIoNDAwMCksCgkiRU5DT0RFRE5BTUUiIFZBUkNIQVIyKDQwMDApLAoJIlBST0RVQ1RUWVBFIiBWQVJDSEFSMig0MDAwKSwKCSJJTkNFUFRJT05EQVRFIiBEQVRFLAoJIk1PTlRITFlSRVRVUk4iIE5VTUJFUiwKCSJJTlNUUlVNRU5UVFlQRUlEIiBWQVJDSEFSMig0MDAwKSwKCSJZRUFSTFlSRVRVUk5WQUxVRSIgTlVNQkVSLAoJIkRBSUxZUkVUVVJOUEVSQ0VOVEFHRSIgTlVNQkVSLAoJIllFQVJMWVJFVFVSTlBFUkNFTlRBR0UiIE5VTUJFUiwKCSJBUEVYJFNZTkNfU1RFUF9TVEFUSUNfSUQiIFZBUkNIQVIyKDI1NSksCgkiQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCglDT05TVFJBSU5UICJTVEFLRV9QUk9EVUNUU19QSyIgUFJJTUFSWSBLRVkgKCJJRCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMTY3IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+d_bars_table.xml::76c05ab17f57d015b354359518197a7087bc626a::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '76c05ab17f57d015b354359518197a7087bc626a';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'd_bars_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJEX0JBUlMiCiAgICgJIklEIiBOVU1CRVIgR0VORVJBVEVEIEJZIERFRkFVTFQgT04gTlVMTCBBUyBJREVOVElUWQogTUlOVkFMVUUgMSBNQVhWQUxVRSA5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5IElOQ1JFTUVOVCBCWSAxIFNUQVJUIFdJVEggMjEgQ0FDSEUgMjAgTk9PUkRFUiBOT0NZQ0xFIE5PS0VFUCBOT1QgTlVMTCBFTkFCTEUsCgkiSU5TVFJVTUVOVF9JRCIgTlVNQkVSLAoJIlQiIFRJTUVTVEFNUCg2KSwKCSJCSUQiIE5VTUJFUiwKCSJBU0siIE5VTUJFUiwKCSJWT0xVTUUiIE5VTUJFUiwKCSJPUEVOIiBOVU1CRVIsCgkiSElHSCIgTlVNQkVSLAoJIkxPVyIgTlVNQkVSLAoJIkNMT1NFIiBOVU1CRVIsCgkiVldBUCIgTlVNQkVSLAoJQ09OU1RSQUlOVCAiRF9DUkFGVFNIQVJQX0RfQkFSU19JRF9QSyIgUFJJTUFSWSBLRVkgKCJJRCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBDT01QUkVTUyBCQVNJQyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_products_table.xml::f2307363f2e3e538a02f2432470dc0d75c283fa6::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'f2307363f2e3e538a02f2432470dc0d75c283fa6';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_products_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9QUk9EVUNUUyIKICAgKAkiUFJPRFVDVF9JRCIgTlVNQkVSIE5PVCBOVUxMIEVOQUJMRSwKCSJQUk9EVUNUX05BTUUiIFZBUkNIQVIyKDUwKSwKCSJQUk9EVUNUX0RFU0NSSVBUSU9OIiBWQVJDSEFSMigyMDAwKSwKCSJMSVNUX1BSSUNFIiBOVU1CRVIoOCwyKSwKCSJDUkVBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfUFJPRF9QSyIgUFJJTUFSWSBLRVkgKCJQUk9EVUNUX0lEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_tasks_table.xml::bdf32e3f998d4a79954e80e722feb462c2ee3d00::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'bdf32e3f998d4a79954e80e722feb462c2ee3d00';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_tasks_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9UQVNLUyIKICAgKAkiSUQiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiUFJPSkVDVCIgTlVNQkVSLAoJIlBBUkVOVF9UQVNLIiBOVU1CRVIsCgkiVEFTS19OQU1FIiBWQVJDSEFSMigyNTUpLAoJIlJPV19WRVJTSU9OX05VTUJFUiIgTlVNQkVSLAoJIlNUQVJUX0RBVEUiIERBVEUsCgkiRU5EX0RBVEUiIERBVEUsCgkiU1RBVFVTIiBWQVJDSEFSMigzMCksCgkiQVNTSUdORURfVE8iIFZBUkNIQVIyKDMwKSwKCSJDT1NUIiBOVU1CRVIsCgkiQlVER0VUIiBOVU1CRVIsCgkiQ1JFQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJDUkVBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJIlVQREFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiVVBEQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCUNPTlNUUkFJTlQgIkVCQV9ERU1PX0NIQVJUX1RBU0tTX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+btcusd_table.xml::4e1fc5c337e67480ad9e5623155480ffeb17b204::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '4e1fc5c337e67480ad9e5623155480ffeb17b204';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'btcusd_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJCVENVU0QiCiAgICgJIklEIiBOVU1CRVIgR0VORVJBVEVEIEJZIERFRkFVTFQgT04gTlVMTCBBUyBJREVOVElUWQogTUlOVkFMVUUgMSBNQVhWQUxVRSA5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5IElOQ1JFTUVOVCBCWSAxIFNUQVJUIFdJVEggMTgwMSBDQUNIRSAyMCBOT09SREVSIE5PQ1lDTEUgTk9LRUVQIE5PVCBOVUxMIEVOQUJMRSwKCSJEQVRFXyIgVkFSQ0hBUjIoNTApLAoJIk9QRU4iIE5VTUJFUiwKCSJISUdIIiBOVU1CRVIsCgkiTE9XIiBOVU1CRVIsCgkiQ0xPU0UiIE5VTUJFUiwKCSJWT0xVTUVfX0JUQ18iIE5VTUJFUiwKCSJWT0xVTUVfX0NVUlJFTkNZXyIgTlVNQkVSLAoJIldFSUdIVEVEX1BSSUNFIiBOVU1CRVIsCglQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_bball_table.xml::378ace829ab9313fc21f4c3d92405ce927ac5eda::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '378ace829ab9313fc21f4c3d92405ce927ac5eda';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_bball_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9CQkFMTCIKICAgKAkiSUQiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiQ0lUWSIgVkFSQ0hBUjIoMjApLAoJIlRFQU0iIFZBUkNIQVIyKDMwKSwKCSJDT05GRVJFTkNFIiBWQVJDSEFSMig1KSwKCSJXSU5TIiBOVU1CRVIsCgkiQ1JFQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJDUkVBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJIlVQREFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiVVBEQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCUNPTlNUUkFJTlQgIkVCQV9ERU1PX0NIQVJUX0JCQUxMX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_stats_table.xml::548313e1f7534c41c7f99f7c4e74a9317341a6d0::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '548313e1f7534c41c7f99f7c4e74a9317341a6d0';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_stats_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9TVEFUUyIKICAgKAkiSUQiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiTkFNRSIgVkFSQ0hBUjIoMiksCgkiQ09VTlRSWSIgVkFSQ0hBUjIoMzApLAoJIkVNUExPWUVFIiBOVU1CRVIsCgkiRU1QTE9ZRVIiIE5VTUJFUiwKCSJUT1RBTCIgTlVNQkVSLAoJIkNSRUFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiQ1JFQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCSJVUERBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIlVQREFURURfQlkiIFZBUkNIQVIyKDI1NSksCglDT05TVFJBSU5UICJFQkFfREVNT19DSEFSVF9TVEFUU19QSyIgUFJJTUFSWSBLRVkgKCJJRCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_stocks_table.xml::d9db28e61b182ba8d73f8b4be3a178f7a93e136b::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'd9db28e61b182ba8d73f8b4be3a178f7a93e136b';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_stocks_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9TVE9DS1MiCiAgICgJIklEIiBOVU1CRVIgTk9UIE5VTEwgRU5BQkxFLAoJIlJPV19WRVJTSU9OX05VTUJFUiIgTlVNQkVSLAoJIlNUT0NLX0NPREUiIFZBUkNIQVIyKDQpLAoJIlNUT0NLX05BTUUiIFZBUkNIQVIyKDEzMCksCgkiUFJJQ0lOR19EQVRFIiBEQVRFLAoJIlBSSUNJTkdfVElNRVNUQU1QIiBUSU1FU1RBTVAoNiksCgkiUFJJQ0lOR19USU1FU1RBTVBfVFoiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiT1BFTklOR19WQUwiIE5VTUJFUiwKCSJISUdIIiBOVU1CRVIsCgkiTE9XIiBOVU1CRVIsCgkiQ0xPU0lOR19WQUwiIE5VTUJFUiwKCSJWT0xVTUUiIE5VTUJFUiwKCSJDUkVBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfU1RPQ0tTX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_dept_table.xml::cfbffebe43ddcfc33c2435b7d56a47af2d931990::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'cfbffebe43ddcfc33c2435b7d56a47af2d931990';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_dept_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9ERVBUIgogICAoCSJERVBUTk8iIE5VTUJFUigyLDApIE5PVCBOVUxMIEVOQUJMRSwKCSJETkFNRSIgVkFSQ0hBUjIoMTQpLAoJIkxPQyIgVkFSQ0hBUjIoMTMpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfREVQVF9QSyIgUFJJTUFSWSBLRVkgKCJERVBUTk8iKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+emp_table.xml::de4d369c6776899f15b543297511c4b2e7c21a79::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'de4d369c6776899f15b543297511c4b2e7c21a79';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'emp_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFTVAiCiAgICgJIkVNUE5PIiBOVU1CRVIoNCwwKSBOT1QgTlVMTCBFTkFCTEUsCgkiRU5BTUUiIFZBUkNIQVIyKDEwKSwKCSJKT0IiIFZBUkNIQVIyKDkpLAoJIk1HUiIgTlVNQkVSKDQsMCksCgkiSElSRURBVEUiIERBVEUsCgkiU0FMIiBOVU1CRVIoNywyKSwKCSJDT01NIiBOVU1CRVIoNywyKSwKCSJERVBUTk8iIE5VTUJFUigyLDApLAoJUFJJTUFSWSBLRVkgKCJFTVBOTyIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+example_table_table.xml::4c34968744ac425a4e7023888bc29502db51acc0::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE TABLE "EXAMPLE_TABLE"
+   (	"LDATETIME" VARCHAR2(40),
+	"L_OPEN" NUMBER(8,0),
+	"L_HIGH" NUMBER(8,0),
+	"L_LOW" NUMBER(8,0),
+	"L_CLOSE" NUMBER(8,0),
+	"L_VOLUME" NUMBER(8,0)
+   ) ORGANIZATION EXTERNAL
+  ( TYPE ORACLE_LOADER
+    DEFAULT DIRECTORY "EXT"
+    ACCESS PARAMETERS
+    ( RECORDS DELIMITED BY NEWLINE
+    FIELDS TERMINATED BY ','
+  )
+    LOCATION
+    ( 'aml.ax.csv'
+    )
+  )
+Error report -
+ORA-06564: object EXT does not exist
+06564. 00000 -  "object %s does not exist"
+*Cause:    The named object could not be found.  Either it does not exist
+           or you do not have permission to access it.
+*Action:   Create the object or get permission to access it.
+######## END ERROR SUMMARY ##################
+btcusd_err$_table.xml::4a7b84fbc3546c46b15e680433ce884bffab2256::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '4a7b84fbc3546c46b15e680433ce884bffab2256';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'btcusd_err$_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJCVENVU0RfRVJSJCIKICAgKAkiT1JBX0VSUl9OVU1CRVIkIiBOVU1CRVIsCgkiT1JBX0VSUl9NRVNHJCIgVkFSQ0hBUjIoMjAwMCksCgkiT1JBX0VSUl9ST1dJRCQiIFVST1dJRCg0MDAwKSwKCSJPUkFfRVJSX09QVFlQJCIgVkFSQ0hBUjIoMiksCgkiT1JBX0VSUl9UQUckIiBWQVJDSEFSMigyMDAwKSwKCSJJRCIgVkFSQ0hBUjIoNDAwMCksCgkiREFURV8iIFZBUkNIQVIyKDQwMDApLAoJIk9QRU4iIFZBUkNIQVIyKDQwMDApLAoJIkhJR0giIFZBUkNIQVIyKDQwMDApLAoJIkxPVyIgVkFSQ0hBUjIoNDAwMCksCgkiQ0xPU0UiIFZBUkNIQVIyKDQwMDApLAoJIlZPTFVNRV9fQlRDXyIgVkFSQ0hBUjIoNDAwMCksCgkiVk9MVU1FX19DVVJSRU5DWV8iIFZBUkNIQVIyKDQwMDApLAoJIldFSUdIVEVEX1BSSUNFIiBWQVJDSEFSMig0MDAwKQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+dept_table.xml::bf79310fdc5d8a30d5393e57e9e97466333a6a67::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'bf79310fdc5d8a30d5393e57e9e97466333a6a67';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'dept_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJERVBUIgogICAoCSJERVBUTk8iIE5VTUJFUigyLDApLAoJIkROQU1FIiBWQVJDSEFSMigxNCksCgkiTE9DIiBWQVJDSEFSMigxMyksCglQUklNQVJZIEtFWSAoIkRFUFROTyIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMjU1IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+d_instruments_table.xml::322d1f8f194536eb14893e7675b2d5e0604b7489::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '322d1f8f194536eb14893e7675b2d5e0604b7489';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'd_instruments_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJEX0lOU1RSVU1FTlRTIgogICAoCSJJRCIgTlVNQkVSIEdFTkVSQVRFRCBCWSBERUZBVUxUIE9OIE5VTEwgQVMgSURFTlRJVFkKIE1JTlZBTFVFIDEgTUFYVkFMVUUgOTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OSBJTkNSRU1FTlQgQlkgMSBTVEFSVCBXSVRIIDEgQ0FDSEUgMjAgTk9PUkRFUiBOT0NZQ0xFIE5PS0VFUCBOT1QgTlVMTCBFTkFCTEUsCgkiS0VZIiBWQVJDSEFSMig0MDAwIENIQVIpIE5PVCBOVUxMIEVOQUJMRSwKCSJDQVRFR09SWSIgVkFSQ0hBUjIoNDAwMCBDSEFSKSwKCSJDVVJSRU5DWSIgVkFSQ0hBUjIoNDAwMCBDSEFSKSwKCSJXSEVOIiBEQVRFLAoJQ09OU1RSQUlOVCAiRF9DUkFGVFNIQVJQX0RfSU5TVFJfSURfUEsiIFBSSU1BUlkgS0VZICgiSUQiKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgQ09NUFJFU1MgQkFTSUMgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_dept_table.xml::9621e6665dbb949f596b2ef91fab7c37a219c045::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '9621e6665dbb949f596b2ef91fab7c37a219c045';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_dept_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DQVJEX0RFUFQiCiAgICgJIkRFUFROTyIgTlVNQkVSIE5PVCBOVUxMIEVOQUJMRSwKCSJETkFNRSIgVkFSQ0hBUjIoNTApLAoJIkxPQyIgVkFSQ0hBUjIoMjU1KSwKCUNPTlNUUkFJTlQgIkVCQV9ERU1PX0NBUkRfREVQVF9QSyIgUFJJTUFSWSBLRVkgKCJERVBUTk8iKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+instrument_table.xml::84c946859da69d91eb6664df6b45e8adf3e7fb39::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '84c946859da69d91eb6664df6b45e8adf3e7fb39';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'instrument_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJJTlNUUlVNRU5UIgogICAoCSJJRCIgVkFSQ0hBUjIoNDAwMCksCgkiTkFNRSIgVkFSQ0hBUjIoNDAwMCksCgkiTkVXUyIgTlVNQkVSLAoJIlRZUEUiIFZBUkNIQVIyKDQwMDApLAoJIkJPVUdIVCIgTlVNQkVSLAoJIlBFUklPRCIgVkFSQ0hBUjIoNDAwMCksCgkiU0VDVE9SIiBWQVJDSEFSMig0MDAwKSwKCSJTVEFUVVMiIFZBUkNIQVIyKDQwMDApLAoJIlNZTUJPTCIgVkFSQ0hBUjIoNDAwMCkgTk9UIE5VTEwgRU5BQkxFLAoJIlZJRVdFRCIgTlVNQkVSLAoJIldBVENIRUQiIE5VTUJFUiwKCSJDQVRFR09SWSIgVkFSQ0hBUjIoNDAwMCksCgkiVVJMSU1BR0UiIFZBUkNIQVIyKDQwMDApLAoJIkNVUlJFTkNZSUQiIFZBUkNIQVIyKDQwMDApLAoJIkxBU1RUUkFERUQiIE5VTUJFUiwKCSJQT1BVTEFSSVRZIiBOVU1CRVIsCgkiREFJTFlSRVRVUk4iIE5VTUJFUiwKCSJERVNDUklQVElPTiIgVkFSQ0hBUjIoNDAwMCksCgkiRU5DT0RFRE5BTUUiIFZBUkNIQVIyKDQwMDApLAoJIlBST0RVQ1RUWVBFIiBWQVJDSEFSMig0MDAwKSwKCSJJTkNFUFRJT05EQVRFIiBEQVRFLAoJIk1PTlRITFlSRVRVUk4iIE5VTUJFUiwKCSJJTlNUUlVNRU5UVFlQRUlEIiBWQVJDSEFSMig0MDAwKSwKCSJZRUFSTFlSRVRVUk5WQUxVRSIgTlVNQkVSLAoJIkRBSUxZUkVUVVJOUEVSQ0VOVEFHRSIgTlVNQkVSLAoJIllFQVJMWVJFVFVSTlBFUkNFTlRBR0UiIE5VTUJFUiwKCSJBUEVYJFNZTkNfU1RFUF9TVEFUSUNfSUQiIFZBUkNIQVIyKDI1NSksCgkiQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCglDT05TVFJBSU5UICJJTlNUUlVNRU5UX1BLIiBQUklNQVJZIEtFWSAoIlNZTUJPTCIpCiAgVVNJTkcgSU5ERVgKICBQQ1RGUkVFIDEwIElOSVRSQU5TIDIgTUFYVFJBTlMgMTY3IExPR0dJTkcKICBTVE9SQUdFKElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpIEVOQUJMRQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_sample_data_table.xml::43bac8fda6166383d8bd24ace8ca00f6cd039689::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '43bac8fda6166383d8bd24ace8ca00f6cd039689';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_sample_data_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9TQU1QTEVfREFUQSIKICAgKAkiSUQiIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiU0FNUExFX0lEIiBOVU1CRVIsCgkiUkVTUE9OU0UiIE5VTUJFUiwKCSJDUkVBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIkNSRUFURURfQlkiIFZBUkNIQVIyKDI1NSksCgkiVVBEQVRFRCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORSwKCSJVUERBVEVEX0JZIiBWQVJDSEFSMigyNTUpLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fU0FNUExFX0RBVEFfUEsiIFBSSU1BUlkgS0VZICgiSUQiKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_sample_names_table.xml::af28fea3fecff3d969eb1e742899ea07d8ee3521::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'af28fea3fecff3d969eb1e742899ea07d8ee3521';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_sample_names_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9TQU1QTEVfTkFNRVMiCiAgICgJIklEIiBOVU1CRVIgTk9UIE5VTEwgRU5BQkxFLAoJIlNBTVBMRV9OQU1FIiBWQVJDSEFSMigzMCkgTk9UIE5VTEwgRU5BQkxFLAoJIlNBTVBMRV9EQVRFIiBEQVRFLAoJIkNSRUFURUQiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiQ1JFQVRFRF9CWSIgVkFSQ0hBUjIoMjU1KSwKCSJVUERBVEVEIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FLAoJIlVQREFURURfQlkiIFZBUkNIQVIyKDI1NSksCglDT05TVFJBSU5UICJFQkFfREVNT19TQU1QTEVTX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+financials_table.xml::6e3afbcaec12708d64838b1e6847b1f4ccd84828::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '6e3afbcaec12708d64838b1e6847b1f4ccd84828';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'financials_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJGSU5BTkNJQUxTIgogICAoCSJERUJUIiBOVU1CRVIsCgkiQVNTRVRTIiBOVU1CRVIsCgkiUEVSSU9EIiBWQVJDSEFSMig0MDAwKSwKCSJTSEFSRVMiIE5VTUJFUiwKCSJUSUNLRVIiIFZBUkNIQVIyKDQwMDApLAoJIkRBVEVLRVkiIERBVEUsCgkiREVCVFVTRCIgTlVNQkVSLAoJIlVQREFURUQiIERBVEUsCgkiREVQT1NJVFMiIE5VTUJFUiwKCSJSRVZFTlVFUyIgTlVNQkVSLAoJIklOVkVOVE9SWSIgTlVNQkVSLAoJIk5FVElOQ09NRSIgTlVNQkVSLAoJIlRBWEFTU0VUUyIgTlVNQkVSLAoJIlBSSUNFU0FMRVMiIE5VTUJFUiwKCSJERUJUQ1VSUkVOVCIgTlVNQkVSLAoJIkdST1NTTUFSR0lOIiBOVU1CRVIsCgkiR1JPU1NQUk9GSVQiIE5VTUJFUiwKCSJJTlZFU1RNRU5UUyIgTlVNQkVSLAoJIk5FVENBU0hGTE9XIiBOVU1CRVIsCgkiUEFZT1VUUkFUSU8iIE5VTUJFUiwKCSJSRVZFTlVFU1VTRCIgTlVNQkVSLAoJIlNIQVJFRkFDVE9SIiBOVU1CRVIsCgkiRUJJVERBTUFSR0lOIiBOVU1CRVIsCgkiQ0FMRU5EQVJEQVRFIiBEQVRFLAoJIkNVUlJFTlRSQVRJTyIgTlVNQkVSLAoJIkZSRUVDQVNIRkxPVyIgTlVNQkVSLAoJIlBST0ZJVE1BUkdJTiIgTlVNQkVSLAoJIlJFUE9SVFBFUklPRCIgREFURSwKCSJBU1NFVFRVUk5PVkVSIiBOVU1CRVIsCgkiQVNTRVRTQVZFUkFHRSIgTlVNQkVSLAoJIkFTU0VUU0NVUlJFTlQiIE5VTUJFUiwKCSJBVkVSQUdFRVFVSVRZIiBOVU1CRVIsCgkiQ09TVE9GUkVWRU5VRSIgTlVNQkVSLAoJIkRJVklERU5EWUlFTEQiIE5VTUJFUiwKCSJQUklDRUVBUk5JTkdTIiBOVU1CRVIsCgkiUkVUVVJOT05TQUxFUyIgTlVNQkVSLAoJIlNBTEVTUEVSU0hBUkUiIE5VTUJFUiwKCSJERUJUTk9OQ1VSUkVOVCIgTlVNQkVSLAoJIlRBWExJQUJJTElUSUVTIiBOVU1CRVIsCgkiV09SS0lOR0NBUElUQUwiIE5VTUJFUiwKCSJERUZFUlJFRFJFVkVOVUUiIE5VTUJFUiwKCSJFTlRFUlBSSVNFVkFMVUUiIE5VTUJFUiwKCSJJTlRFUkVTVEVYUEVOU0UiIE5VTUJFUiwKCSJJTlZFU1RFRENBUElUQUwiIE5VTUJFUiwKCSJPUEVSQVRJTkdJTkNPTUUiIE5VTUJFUiwKCSJBU1NFVFNOT05DVVJSRU5UIiBOVU1CRVIsCgkiSU5DT01FVEFYRVhQRU5TRSIgTlVNQkVSLAoJIlBSSUNFVE9CT09LVkFMVUUiIE5VTUJFUiwKCSJUT1RBTExJQUJJTElUSUVTIiBOVU1CRVIsCgkiQk9PS1ZBTFVFUEVSU0hBUkUiIE5VTUJFUiwKCSJERUJUVE9FUVVJVFlSQVRJTyIgTlVNQkVSLAoJIkVBUk5JTkdTQkVGT1JFVEFYIiBOVU1CRVIsCgkiT1BFUkFUSU5HRVhQRU5TRVMiIE5VTUJFUiwKCSJQUklDRVRPU0FMRVNSQVRJTyIgTlVNQkVSLAoJIkNBUElUQUxFWFBFTkRJVFVSRSIgTlVNQkVSLAoJIkNBU0hBTkRFUVVJVkFMRU5UUyIgTlVNQkVSLAoJIkNPTlNPTElEQVRFRElOQ09NRSIgTlVNQkVSLAoJIkNVUlJFTlRMSUFCSUxJVElFUyIgTlVNQkVSLAoJIklOVkVTVE1FTlRTQ1VSUkVOVCIgTlVNQkVSLAoJIlNIQVJFSE9MREVSU0VRVUlUWSIgTlVNQkVSLAoJIlRBTkdJQkxFQVNTRVRWQUxVRSIgTlVNQkVSLAoJIkZSRUVDQVNIRkxPV1BFUlNIQVJFIiBOVU1CRVIsCgkiSVNTVUFOQ0VFUVVJVFlTSEFSRVMiIE5VTUJFUiwKCSJNQVJLRVRDQVBJVEFMSVpBVElPTiIgTlVNQkVSLAoJIk5FVElOQ09NRUNPTU1PTlNUT0NLIiBOVU1CRVIsCgkiUFJJQ0VUT0VBUk5JTkdTUkFUSU8iIE5VTUJFUiwKCSJDQVNIQU5ERVFVSVZBTEVOVFNVU0QiIE5VTUJFUiwKCSJFQVJOSU5HU1BFUkJBU0lDU0hBUkUiIE5VTUJFUiwKCSJJTlZFU1RNRU5UU05PTkNVUlJFTlQiIE5VTUJFUiwKCSJMSUFCSUxJVElFU05PTkNVUlJFTlQiIE5VTUJFUiwKCSJSRVRVUk5PTkFWRVJBR0VBU1NFVFMiIE5VTUJFUiwKCSJSRVRVUk5PTkFWRVJBR0VFUVVJVFkiIE5VTUJFUiwKCSJTSEFSRUhPTERFUlNFUVVJVFlVU0QiIE5VTUJFUiwKCSJXRUlHSFRFREFWRVJBR0VTSEFSRVMiIE5VTUJFUiwKCSJJTlZFU1RFRENBUElUQUxBVkVSQUdFIiBOVU1CRVIsCgkiSVNTVUFOQ0VERUJUU0VDVVJJVElFUyIgTlVNQkVSLAoJIlNIQVJFQkFTRURDT01QRU5TQVRJT04iIE5VTUJFUiwKCSJFQVJOSU5HU1BFUkRJTFVURURTSEFSRSIgTlVNQkVSLAoJIkVOVEVSUFJJU0VWQUxVRU9WRVJFQklUIiBOVU1CRVIsCgkiTkVUSU5DT01FQ09NTU9OU1RPQ0tVU0QiIE5VTUJFUiwKCSJSRVRVUk5PTklOVkVTVEVEQ0FQSVRBTCIgTlVNQkVSLAoJIlNIQVJFUFJJQ0VBREpVU1RFRENMT1NFIiBOVU1CRVIsCgkiRUFSTklOR1NQRVJCQVNJQ1NIQVJFVVNEIiBOVU1CRVIsCgkiTkVUQ0FTSEZMT1dGUk9NRklOQU5DSU5HIiBOVU1CRVIsCgkiTkVUQ0FTSEZMT1dGUk9NSU5WRVNUSU5HIiBOVU1CRVIsCgkiVFJBREVBTkROT05UUkFERVBBWUFCTEVTIiBOVU1CRVIsCgkiRU5URVJQUklTRVZBTFVFT1ZFUkVCSVREQSIgTlVNQkVSLAoJIk5FVENBU0hGTE9XRlJPTU9QRVJBVElPTlMiIE5VTUJFUiwKCSJQUk9QRVJUWVBMQU5URVFVSVBNRU5UTkVUIiBOVU1CRVIsCgkiRUFSTklOR0JFRk9SRUlOVEVSRVNUVEFYRVMiIE5VTUJFUiwKCSJHT09EV0lMTEFORElOVEFOR0lCTEVBU1NFVFMiIE5VTUJFUiwKCSJUUkFERUFORE5PTlRSQURFUkVDRUlWQUJMRVMiIE5VTUJFUiwKCSJESVZJREVORFNQRVJCQVNJQ0NPTU1PTlNIQVJFIiBOVU1CRVIsCgkiV0VJR0hURURBVkVSQUdFU0hBUkVTRElMVVRFRCIgTlVNQkVSLAoJIkVBUk5JTkdCRUZPUkVJTlRFUkVTVFRBWEVTVVNEIiBOVU1CRVIsCgkiUkVTRUFSQ0hBTkRERVZFTE9QTUVOVEVYUEVOU0UiIE5VTUJFUiwKCSJGT1JFSUdOQ1VSUkVOQ1lVU0RFWENIQU5HRVJBVEUiIE5VTUJFUiwKCSJUQU5HSUJMRUFTU0VUU0JPT0tWQUxVRVBFUlNIQVJFIiBOVU1CRVIsCgkiRUZGRUNUT0ZFWENIQU5HRVJBVEVDSEFOR0VTT05DQVNIIiBOVU1CRVIsCgkiQUNDVU1VTEFURURSRVRBSU5FREVBUk5JTkdTREVGSUNJVCIgTlVNQkVSLAoJIk5FVElOQ09NRVRPTk9OQ09OVFJPTExJTkdJTlRFUkVTVFMiIE5VTUJFUiwKCSJBQ0NVTVVMQVRFRE9USEVSQ09NUFJFSEVOU0lWRUlOQ09NRSIgTlVNQkVSLAoJIkRFUFJFQ0lBVElPTkFNT1JUSVpBVElPTkFOREFDQ1JFVElPTiIgTlVNQkVSLAoJIlBBWU1FTlRESVZJREVORFNPVEhFUkNBU0hESVNUUklCVVRJT05TIiBOVU1CRVIsCgkiU0VMTElOR0dFTkVSQUxBTkRBRE1JTklTVFJBVElWRUVYUEVOU0UiIE5VTUJFUiwKCSJORVRMT1NTSU5DT01FRlJPTURJU0NPTlRJTlVFRE9QRVJBVElPTlMiIE5VTUJFUiwKCSJQUkVGRVJSRURESVZJREVORFNJTkNPTUVTVEFURU1FTlRJTVBBQ1QiIE5VTUJFUiwKCSJORVRDQVNIRkxPV0JVU0lORVNTQUNRVUlTSVRJT05TRElTUE9TQUxTIiBOVU1CRVIsCgkiTkVUQ0FTSEZMT1dJTlZFU1RNRU5UQUNRVUlTSVRJT05TRElTUE9TQUxTIiBOVU1CRVIsCgkiRUFSTklOR1NCRUZPUkVJTlRFUkVTVFRBWEVTREVQUkVDSUFUSU9OQU1PUlRJWkFUSU9OIiBOVU1CRVIsCgkiRUFSTklOR1NCRUZPUkVJTlRFUkVTVFRBWEVTREVQUkVDSUFUSU9OQU1PUlRJWkFUSU9OVVNEIiBOVU1CRVIsCgkiQVBFWCRTWU5DX1NURVBfU1RBVElDX0lEIiBWQVJDSEFSMigyNTUpLAoJIkFQRVgkUk9XX1NZTkNfVElNRVNUQU1QIiBUSU1FU1RBTVAgKDYpIFdJVEggVElNRSBaT05FCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+asx_news_table.xml::438cf3d7d1e825bc5899d5e720d6da2a13cb338f::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '438cf3d7d1e825bc5899d5e720d6da2a13cb338f';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'asx_news_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJBU1hfTkVXUyIKICAgKAkiVElDS0VSIiBWQVJDSEFSMig0MDAwKSwKCSJEQVRFXyIgVkFSQ0hBUjIoNDAwMCksCgkiUFJJQ0VTRU5TIiBWQVJDSEFSMig0MDAwKSwKCSJMSU5LIiBWQVJDSEFSMig0MDAwKSwKCSJBUEVYJFNZTkNfU1RFUF9TVEFUSUNfSUQiIFZBUkNIQVIyKDI1NSksCgkiQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiIFRJTUVTVEFNUCAoNikgV0lUSCBUSU1FIFpPTkUsCgkiTElOS1RFWFQiIFZBUkNIQVIyKDQwMDApCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+stock_exchanges_table.xml::c686c5d0f4760429a61eef89d6a7db83ec710c33::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'c686c5d0f4760429a61eef89d6a7db83ec710c33';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'stock_exchanges_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJTVE9DS19FWENIQU5HRVMiCiAgICgJIklEIiBOVU1CRVIsCgkiTUlDIiBWQVJDSEFSMig0MDAwKSwKCSJDT0RFIiBWQVJDSEFSMig0MDAwKSwKCSJOQU1FIiBWQVJDSEFSMig0MDAwKSwKCSJUQVBFIiBWQVJDSEFSMig0MDAwKSwKCSJUWVBFIiBWQVJDSEFSMig0MDAwKSwKCSJNQVJLRVQiIFZBUkNIQVIyKDQwMDApLAoJIkFQRVgkU1lOQ19TVEVQX1NUQVRJQ19JRCIgVkFSQ0hBUjIoMjU1KSwKCSJBUEVYJFJPV19TWU5DX1RJTUVTVEFNUCIgVElNRVNUQU1QICg2KSBXSVRIIFRJTUUgWk9ORQogICApIFNFR01FTlQgQ1JFQVRJT04gSU1NRURJQVRFCiAgUENURlJFRSAxMCBQQ1RVU0VEIDQwIElOSVRSQU5TIDEgTk9DT01QUkVTUyBMT0dHSU5HCiAgU1RPUkFHRSggSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKTs=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_vehicle_speed_table.xml::cc88f99dabaf6e9de455437fce8f5a72fe8aaf39::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'cc88f99dabaf6e9de455437fce8f5a72fe8aaf39';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_vehicle_speed_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DQVJEX1ZFSElDTEVfU1BFRUQiCiAgICgJIklEIiBOVU1CRVIgREVGQVVMVCB0b19udW1iZXIoc3lzX2d1aWQoKSwgJ1hYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYJyksCgkiUE9TVEVEX1NQRUVEIiBOVU1CRVIsCgkiVkVISUNMRV9TUEVFRCIgTlVNQkVSLAoJIkRBVEVfT0ZfSU5DRURFTlQiIERBVEUsCgkiTElDRU5TRV9QTEFURSIgVkFSQ0hBUjIoNTApLAoJIkxPQ0FUSU9OIiBWQVJDSEFSMig1MCksCgkiU1RBVEUiIFZBUkNIQVIyKDUwKSwKCUNPTlNUUkFJTlQgIkVCQV9ERU1PX0NBUkRfVlNQRUVEX1BLIiBQUklNQVJZIEtFWSAoIklEIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_emp_table.xml::fa4061a34a0b541dc0e0b5b5654f032e237a5736::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'fa4061a34a0b541dc0e0b5b5654f032e237a5736';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_emp_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DSEFSVF9FTVAiCiAgICgJIkVNUE5PIiBOVU1CRVIoNCwwKSBOT1QgTlVMTCBFTkFCTEUsCgkiRU5BTUUiIFZBUkNIQVIyKDEwKSwKCSJKT0IiIFZBUkNIQVIyKDkpLAoJIk1HUiIgTlVNQkVSKDQsMCksCgkiSElSRURBVEUiIERBVEUsCgkiU0FMIiBOVU1CRVIoNywyKSwKCSJDT01NIiBOVU1CRVIoNywyKSwKCSJERVBUTk8iIE5VTUJFUigyLDApLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfRU1QX1BLIiBQUklNQVJZIEtFWSAoIkVNUE5PIikKICBVU0lORyBJTkRFWAogIFBDVEZSRUUgMTAgSU5JVFJBTlMgMiBNQVhUUkFOUyAyNTUgTE9HR0lORwogIFNUT1JBR0UoSU5JVElBTCA2NTUzNiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAgRlJFRUxJU1RTIDEgRlJFRUxJU1QgR1JPVVBTIDEgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkgRU5BQkxFCiAgICkgU0VHTUVOVCBDUkVBVElPTiBJTU1FRElBVEUKICBQQ1RGUkVFIDEwIFBDVFVTRUQgNDAgSU5JVFJBTlMgMSBOT0NPTVBSRVNTIExPR0dJTkcKICBTVE9SQUdFKCBJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMQogIEJVRkZFUl9QT09MIERFRkFVTFQgRkxBU0hfQ0FDSEUgREVGQVVMVCBDRUxMX0ZMQVNIX0NBQ0hFIERFRkFVTFQpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_emp_table.xml::8137b0bfd66f5a33b19a746fb3393c565c518028::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '8137b0bfd66f5a33b19a746fb3393c565c518028';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_emp_table.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIFRBQkxFICJFQkFfREVNT19DQVJEX0VNUCIKICAgKAkiRU1QTk8iIE5VTUJFUiBOT1QgTlVMTCBFTkFCTEUsCgkiRU5BTUUiIFZBUkNIQVIyKDI1NSksCgkiSk9CIiBWQVJDSEFSMigyNTUpLAoJIk1HUiIgTlVNQkVSLAoJIkhJUkVEQVRFIiBEQVRFLAoJIlNBTCIgTlVNQkVSLAoJIkNPTU0iIE5VTUJFUiwKCSJERVBUTk8iIE5VTUJFUiwKCSJQUk9GSUxFX0lNQUdFIiBCTE9CLAoJIk1JTUVUWVBFIiBWQVJDSEFSMigyNTUpLAoJIkZJTEVOQU1FIiBWQVJDSEFSMig0MDApLAoJIklNQUdFX0xBU1RfVVBEQVRFIiBEQVRFLAoJIlRBR1MiIFZBUkNIQVIyKDQwMDApLAoJQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0FSRF9FTVBfUEsiIFBSSU1BUlkgS0VZICgiRU1QTk8iKQogIFVTSU5HIElOREVYCiAgUENURlJFRSAxMCBJTklUUkFOUyAyIE1BWFRSQU5TIDI1NSBMT0dHSU5HCiAgU1RPUkFHRShJTklUSUFMIDY1NTM2IE5FWFQgMTA0ODU3NiBNSU5FWFRFTlRTIDEgTUFYRVhURU5UUyAyMTQ3NDgzNjQ1CiAgUENUSU5DUkVBU0UgMCBGUkVFTElTVFMgMSBGUkVFTElTVCBHUk9VUFMgMSBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSBFTkFCTEUKICAgKSBTRUdNRU5UIENSRUFUSU9OIElNTUVESUFURQogIFBDVEZSRUUgMTAgUENUVVNFRCA0MCBJTklUUkFOUyAxIE5PQ09NUFJFU1MgTE9HR0lORwogIFNUT1JBR0UoIElOSVRJQUwgNjU1MzYgTkVYVCAxMDQ4NTc2IE1JTkVYVEVOVFMgMSBNQVhFWFRFTlRTIDIxNDc0ODM2NDUKICBQQ1RJTkNSRUFTRSAwIEZSRUVMSVNUUyAxIEZSRUVMSVNUIEdST1VQUyAxCiAgQlVGRkVSX1BPT0wgREVGQVVMVCBGTEFTSF9DQUNIRSBERUZBVUxUIENFTExfRkxBU0hfQ0FDSEUgREVGQVVMVCkKIExPQiAoIlBST0ZJTEVfSU1BR0UiKSBTVE9SRSBBUyBTRUNVUkVGSUxFICAoCiAgRU5BQkxFIFNUT1JBR0UgSU4gUk9XIENIVU5LIDgxOTIKICBOT0NBQ0hFIExPR0dJTkcgTk9DT01QUkVTUyBLRUVQX0RVUExJQ0FURVMKICBTVE9SQUdFKCBJTklUSUFMIDEwNjQ5NiBORVhUIDEwNDg1NzYgTUlORVhURU5UUyAxIE1BWEVYVEVOVFMgMjE0NzQ4MzY0NQogIFBDVElOQ1JFQVNFIDAKICBCVUZGRVJfUE9PTCBERUZBVUxUIEZMQVNIX0NBQ0hFIERFRkFVTFQgQ0VMTF9GTEFTSF9DQUNIRSBERUZBVUxUKSk7}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+btcusd_err$_comments.xml::5799af577e259d9ab8b95d0d43440e8ec5b43554::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+COMMENT ON TABLE "CRAFTSHARP"."BTCUSD_ERR$"  IS 'DML Error Logging table for "BTCUSD"'
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+lean_data_csv_view.xml::d535ef33d54d42ac54bc1b5ec6e419b9db75e1af::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'd535ef33d54d42ac54bc1b5ec6e419b9db75e1af';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'lean_data_csv_view.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRk9SQ0UgRURJVElPTkFCTEUgVklFVyAiTEVBTl9EQVRBX0NTViIgCiAoICJDTE9CX1ZBTCIsICJOVU1CRVJfT0ZfUk9XUyIKICApICBBUyAKICBTRUxFQ1QKIFhNTENBU1QoWE1MQUdHKFhNTEVMRU1FTlQoRSxDT0xfVkFMVUV8fENIUigxMyl8fENIUigxMCkpKSBBUyBDTE9CKSBBUyBDTE9CX1ZBTCwKIENPVU5UKCopIEFTIE5VTUJFUl9PRl9ST1dTCkZST00gICgKIFNFTEVDVCAnSUQ7Q0FSX05BTUU7Q0FSX1ZBTFVFO0NBUl9LTScgQVMgQ09MX1ZBTFVFIEZST00gRFVBTAogVU5JT04gQUxMCiBTRUxFQ1QgSUR8fCc7J3x8CiAgIFBSSUNJTkdfREFURXx8JzsnfHwKICAgUFJJQ0lOR19USU1FU1RBTVB8fCc7J3x8CiAgIE9QRU5JTkdfVkFMIEFTIENPTF9WQUxVRQogRlJPTSBMRUFOX0RBVEFfREFZCik=}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFZJRVcgeG1sbnM9Imh0dHA6Ly94bWxucy5vcmFjbGUuY29tL2t1IiB2ZXJzaW9uPSIxLjAiPgogICA8U0NIRU1BPkZJTlRFQ0g8L1NDSEVNQT4KICAgPE5BTUU+TEVBTl9EQVRBX0NTVjwvTkFNRT4KICAgPERFRkFVTFRfQ09MTEFUSU9OPlVTSU5HX05MU19DT01QPC9ERUZBVUxUX0NPTExBVElPTj4KICAgPENPTF9MSVNUPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+Q0xPQl9WQUw8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPk5VTUJFUl9PRl9ST1dTPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgIDwvQ09MX0xJU1Q+CiAgIDxTVUJRVUVSWT5TRUxFQ1QKIFhNTENBU1QoWE1MQUdHKFhNTEVMRU1FTlQoRSxDT0xfVkFMVUV8fENIUigxMyl8fENIUigxMCkpKSBBUyBDTE9CKSBBUyBDTE9CX1ZBTCwKIENPVU5UKCopIEFTIE5VTUJFUl9PRl9ST1dTCkZST00gICgKIFNFTEVDVCAnSUQ7Q0FSX05BTUU7Q0FSX1ZBTFVFO0NBUl9LTScgQVMgQ09MX1ZBTFVFIEZST00gRFVBTAogVU5JT04gQUxMCiBTRUxFQ1QgSUR8fCc7J3x8CiAgIFBSSUNJTkdfREFURXx8JzsnfHwKICAgUFJJQ0lOR19USU1FU1RBTVB8fCc7J3x8CiAgIE9QRU5JTkdfVkFMIEFTIENPTF9WQUxVRQogRlJPTSBMRUFOX0RBVEFfREFZCik8L1NVQlFVRVJZPgo8L1ZJRVc+}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+ins_data_day_view.xml::847d61d3246ec8a276df0e8b3c0596ce7c8cf2fe::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '847d61d3246ec8a276df0e8b3c0596ce7c8cf2fe';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'ins_data_day_view.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRk9SQ0UgRURJVElPTkFCTEUgVklFVyAiSU5TX0RBVEFfREFZIiAKICggIklEIiwgIklOU1RSVU1FTlRfSUQiLCAiVCIsICJCSUQiLCAiQVNLIiwgIlZPTFVNRSIsICJPUEVOIiwgIkhJR0giLCAiTE9XIiwgIkNMT1NFIiwgIlZXQVAiCiAgKSAgQVMgCiAgU0VMRUNUICJJRCIsIklOU1RSVU1FTlRfSUQiLCJUIiwiQklEIiwiQVNLIiwiVk9MVU1FIiwiT1BFTiIsIkhJR0giLCJMT1ciLCJDTE9TRSIsIlZXQVAiIEZST00gRF9CQVJT}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFZJRVcgeG1sbnM9Imh0dHA6Ly94bWxucy5vcmFjbGUuY29tL2t1IiB2ZXJzaW9uPSIxLjAiPgogICA8U0NIRU1BPkZJTlRFQ0g8L1NDSEVNQT4KICAgPE5BTUU+SU5TX0RBVEFfREFZPC9OQU1FPgogICA8REVGQVVMVF9DT0xMQVRJT04+VVNJTkdfTkxTX0NPTVA8L0RFRkFVTFRfQ09MTEFUSU9OPgogICA8Q09MX0xJU1Q+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5JRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+SU5TVFJVTUVOVF9JRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+QklEPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5BU0s8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlZPTFVNRTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+T1BFTjwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+SElHSDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+TE9XPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5DTE9TRTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VldBUDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICA8L0NPTF9MSVNUPgogICA8U1VCUVVFUlk+U0VMRUNUICJJRCIsIklOU1RSVU1FTlRfSUQiLCJUIiwiQklEIiwiQVNLIiwiVk9MVU1FIiwiT1BFTiIsIkhJR0giLCJMT1ciLCJDTE9TRSIsIlZXQVAiIEZST00gRF9CQVJTPC9TVUJRVUVSWT4KPC9WSUVXPg==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+lean_data_view.xml::917c2e10ca968e80195c49be2b1623860beccf36::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '917c2e10ca968e80195c49be2b1623860beccf36';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'lean_data_view.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRk9SQ0UgRURJVElPTkFCTEUgVklFVyAiTEVBTl9EQVRBIiAKICggIklEIiwgIlJPV19WRVJTSU9OX05VTUJFUiIsICJTVE9DS19DT0RFIiwgIlNUT0NLX05BTUUiLCAiUFJJQ0lOR19EQVRFIiwgIlBSSUNJTkdfVElNRVNUQU1QIiwgIlBSSUNJTkdfVElNRVNUQU1QX1RaIiwgIk9QRU5JTkdfVkFMIiwgIkhJR0giLCAiTE9XIiwgIkNMT1NJTkdfVkFMIiwgIlZPTFVNRSIsICJDUkVBVEVEIiwgIkNSRUFURURfQlkiLCAiVVBEQVRFRCIsICJVUERBVEVEX0JZIgogICkgIEFTIAogIFNFTEVDVCAKICAgICJJRCIsIlJPV19WRVJTSU9OX05VTUJFUiIsIlNUT0NLX0NPREUiLCJTVE9DS19OQU1FIiwiUFJJQ0lOR19EQVRFIiwiUFJJQ0lOR19USU1FU1RBTVAiLCJQUklDSU5HX1RJTUVTVEFNUF9UWiIsIk9QRU5JTkdfVkFMIiwiSElHSCIsIkxPVyIsIkNMT1NJTkdfVkFMIiwiVk9MVU1FIiwiQ1JFQVRFRCIsIkNSRUFURURfQlkiLCJVUERBVEVEIiwiVVBEQVRFRF9CWSIKRlJPTSAKRUJBX0RFTU9fQ0hBUlRfU1RPQ0tT}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFZJRVcgeG1sbnM9Imh0dHA6Ly94bWxucy5vcmFjbGUuY29tL2t1IiB2ZXJzaW9uPSIxLjAiPgogICA8U0NIRU1BPkZJTlRFQ0g8L1NDSEVNQT4KICAgPE5BTUU+TEVBTl9EQVRBPC9OQU1FPgogICA8REVGQVVMVF9DT0xMQVRJT04+VVNJTkdfTkxTX0NPTVA8L0RFRkFVTFRfQ09MTEFUSU9OPgogICA8Q09MX0xJU1Q+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5JRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+Uk9XX1ZFUlNJT05fTlVNQkVSPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5TVE9DS19DT0RFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5TVE9DS19OQU1FPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5QUklDSU5HX0RBVEU8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlBSSUNJTkdfVElNRVNUQU1QPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5QUklDSU5HX1RJTUVTVEFNUF9UWjwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+T1BFTklOR19WQUw8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkhJR0g8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkxPVzwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+Q0xPU0lOR19WQUw8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlZPTFVNRTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+Q1JFQVRFRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+Q1JFQVRFRF9CWTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VVBEQVRFRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VVBEQVRFRF9CWTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICA8L0NPTF9MSVNUPgogICA8U1VCUVVFUlk+U0VMRUNUIAogICAgIklEIiwiUk9XX1ZFUlNJT05fTlVNQkVSIiwiU1RPQ0tfQ09ERSIsIlNUT0NLX05BTUUiLCJQUklDSU5HX0RBVEUiLCJQUklDSU5HX1RJTUVTVEFNUCIsIlBSSUNJTkdfVElNRVNUQU1QX1RaIiwiT1BFTklOR19WQUwiLCJISUdIIiwiTE9XIiwiQ0xPU0lOR19WQUwiLCJWT0xVTUUiLCJDUkVBVEVEIiwiQ1JFQVRFRF9CWSIsIlVQREFURUQiLCJVUERBVEVEX0JZIgpGUk9NIApFQkFfREVNT19DSEFSVF9TVE9DS1M8L1NVQlFVRVJZPgo8L1ZJRVc+}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+ins_dash_view.xml::eddd03b8a12356d00f82fbda4867b0a882b728ba::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'eddd03b8a12356d00f82fbda4867b0a882b728ba';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'ins_dash_view.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRk9SQ0UgRURJVElPTkFCTEUgVklFVyAiSU5TX0RBU0giIAogKCAiSUQiLCAiTkFNRSIsICJORVdTIiwgIlRZUEUiLCAiQk9VR0hUIiwgIlBFUklPRCIsICJTRUNUT1IiLCAiU1RBVFVTIiwgIlNZTUJPTCIsICJWSUVXRUQiLCAiV0FUQ0hFRCIsICJDQVRFR09SWSIsICJVUkxJTUFHRSIsICJDVVJSRU5DWUlEIiwgIkxBU1RUUkFERUQiLCAiUE9QVUxBUklUWSIsICJEQUlMWVJFVFVSTiIsICJERVNDUklQVElPTiIsICJFTkNPREVETkFNRSIsICJQUk9EVUNUVFlQRSIsICJJTkNFUFRJT05EQVRFIiwgIk1PTlRITFlSRVRVUk4iLCAiSU5TVFJVTUVOVFRZUEVJRCIsICJZRUFSTFlSRVRVUk5WQUxVRSIsICJEQUlMWVJFVFVSTlBFUkNFTlRBR0UiLCAiWUVBUkxZUkVUVVJOUEVSQ0VOVEFHRSIsICJBUEVYJFNZTkNfU1RFUF9TVEFUSUNfSUQiLCAiQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiLCAiSElTVCIKICApICBBUyAKICBzZWxlY3QgaS4iSUQiLGkuIk5BTUUiLGkuIk5FV1MiLGkuIlRZUEUiLGkuIkJPVUdIVCIsaS4iUEVSSU9EIixpLiJTRUNUT1IiLGkuIlNUQVRVUyIsaS4iU1lNQk9MIixpLiJWSUVXRUQiLGkuIldBVENIRUQiLGkuIkNBVEVHT1JZIixpLiJVUkxJTUFHRSIsaS4iQ1VSUkVOQ1lJRCIsaS4iTEFTVFRSQURFRCIsaS4iUE9QVUxBUklUWSIsaS4iREFJTFlSRVRVUk4iLGkuIkRFU0NSSVBUSU9OIixpLiJFTkNPREVETkFNRSIsaS4iUFJPRFVDVFRZUEUiLGkuIklOQ0VQVElPTkRBVEUiLGkuIk1PTlRITFlSRVRVUk4iLGkuIklOU1RSVU1FTlRUWVBFSUQiLGkuIllFQVJMWVJFVFVSTlZBTFVFIixpLiJEQUlMWVJFVFVSTlBFUkNFTlRBR0UiLGkuIllFQVJMWVJFVFVSTlBFUkNFTlRBR0UiLGkuIkFQRVgkU1lOQ19TVEVQX1NUQVRJQ19JRCIsaS4iQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiICwgZ2V0X3NwYXJrbGluZV9zZWN1cml0eShpLnN5bWJvbCxudWxsLG51bGwpIGFzIGhpc3QgZnJvbSBpbnN0cnVtZW50IGk=}')));
+sxml := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{CiAgPFZJRVcgeG1sbnM9Imh0dHA6Ly94bWxucy5vcmFjbGUuY29tL2t1IiB2ZXJzaW9uPSIxLjAiPgogICA8U0NIRU1BPkZJTlRFQ0g8L1NDSEVNQT4KICAgPE5BTUU+SU5TX0RBU0g8L05BTUU+CiAgIDxERUZBVUxUX0NPTExBVElPTj5VU0lOR19OTFNfQ09NUDwvREVGQVVMVF9DT0xMQVRJT04+CiAgIDxDT0xfTElTVD4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPklEPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5OQU1FPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5ORVdTPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5UWVBFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5CT1VHSFQ8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlBFUklPRDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+U0VDVE9SPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5TVEFUVVM8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlNZTUJPTDwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VklFV0VEPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5XQVRDSEVEPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5DQVRFR09SWTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+VVJMSU1BR0U8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkNVUlJFTkNZSUQ8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkxBU1RUUkFERUQ8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlBPUFVMQVJJVFk8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkRBSUxZUkVUVVJOPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5ERVNDUklQVElPTjwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+RU5DT0RFRE5BTUU8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPlBST0RVQ1RUWVBFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5JTkNFUFRJT05EQVRFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5NT05USExZUkVUVVJOPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5JTlNUUlVNRU5UVFlQRUlEPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5ZRUFSTFlSRVRVUk5WQUxVRTwvTkFNRT4KICAgICAgPC9DT0xfTElTVF9JVEVNPgogICAgICA8Q09MX0xJU1RfSVRFTT4KICAgICAgICAgPE5BTUU+REFJTFlSRVRVUk5QRVJDRU5UQUdFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5ZRUFSTFlSRVRVUk5QRVJDRU5UQUdFPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5BUEVYJFNZTkNfU1RFUF9TVEFUSUNfSUQ8L05BTUU+CiAgICAgIDwvQ09MX0xJU1RfSVRFTT4KICAgICAgPENPTF9MSVNUX0lURU0+CiAgICAgICAgIDxOQU1FPkFQRVgkUk9XX1NZTkNfVElNRVNUQU1QPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgICAgIDxDT0xfTElTVF9JVEVNPgogICAgICAgICA8TkFNRT5ISVNUPC9OQU1FPgogICAgICA8L0NPTF9MSVNUX0lURU0+CiAgIDwvQ09MX0xJU1Q+CiAgIDxTVUJRVUVSWT5zZWxlY3QgaS4iSUQiLGkuIk5BTUUiLGkuIk5FV1MiLGkuIlRZUEUiLGkuIkJPVUdIVCIsaS4iUEVSSU9EIixpLiJTRUNUT1IiLGkuIlNUQVRVUyIsaS4iU1lNQk9MIixpLiJWSUVXRUQiLGkuIldBVENIRUQiLGkuIkNBVEVHT1JZIixpLiJVUkxJTUFHRSIsaS4iQ1VSUkVOQ1lJRCIsaS4iTEFTVFRSQURFRCIsaS4iUE9QVUxBUklUWSIsaS4iREFJTFlSRVRVUk4iLGkuIkRFU0NSSVBUSU9OIixpLiJFTkNPREVETkFNRSIsaS4iUFJPRFVDVFRZUEUiLGkuIklOQ0VQVElPTkRBVEUiLGkuIk1PTlRITFlSRVRVUk4iLGkuIklOU1RSVU1FTlRUWVBFSUQiLGkuIllFQVJMWVJFVFVSTlZBTFVFIixpLiJEQUlMWVJFVFVSTlBFUkNFTlRBR0UiLGkuIllFQVJMWVJFVFVSTlBFUkNFTlRBR0UiLGkuIkFQRVgkU1lOQ19TVEVQX1NUQVRJQ19JRCIsaS4iQVBFWCRST1dfU1lOQ19USU1FU1RBTVAiICwgZ2V0X3NwYXJrbGluZV9zZWN1cml0eShpLnN5bWJvbCxudWxsLG51bGwpIGFzIGhpc3QgZnJvbSBpbnN0cnVtZW50IGk8L1NVQlFVRVJZPgo8L1ZJRVc+}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 17
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_order_fk_ref_constraint.xml::70bb4ee34eb0022b4f2121234d9ae9898769dcc1::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '70bb4ee34eb0022b4f2121234d9ae9898769dcc1';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_order_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NIQVJUX09SREVSUyIgQUREIENPTlNUUkFJTlQgIkVCQV9ERU1PX0NIQVJUX09SREVSX0ZLIiBGT1JFSUdOIEtFWSAoIlBST0RVQ1RfSUQiKQoJICBSRUZFUkVOQ0VTICJFQkFfREVNT19DSEFSVF9QUk9EVUNUUyIgKCJQUk9EVUNUX0lEIikgT04gREVMRVRFIENBU0NBREUgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_sample_fk_ref_constraint.xml::48272f51b94c7e739becccd9ab58c5b5fe2ec82a::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '48272f51b94c7e739becccd9ab58c5b5fe2ec82a';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_sample_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NIQVJUX1NBTVBMRV9EQVRBIiBBREQgQ09OU1RSQUlOVCAiRUJBX0RFTU9fU0FNUExFX0ZLIiBGT1JFSUdOIEtFWSAoIlNBTVBMRV9JRCIpCgkgIFJFRkVSRU5DRVMgIkVCQV9ERU1PX0NIQVJUX1NBTVBMRV9OQU1FUyIgKCJJRCIpIE9OIERFTEVURSBDQVNDQURFIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_emp_dept_fk_ref_constraint.xml::1cbbb2f6eb0b8759009d865e643423dbc1ade6a9::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '1cbbb2f6eb0b8759009d865e643423dbc1ade6a9';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_emp_dept_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NBUkRfRU1QIiBBREQgQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0FSRF9FTVBfREVQVF9GSyIgRk9SRUlHTiBLRVkgKCJERVBUTk8iKQoJICBSRUZFUkVOQ0VTICJFQkFfREVNT19DQVJEX0RFUFQiICgiREVQVE5PIikgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_card_emp_mgr_fk_ref_constraint.xml::e6f3840a492c4b90b193192305579221bb5ef8be::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'e6f3840a492c4b90b193192305579221bb5ef8be';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_card_emp_mgr_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NBUkRfRU1QIiBBREQgQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0FSRF9FTVBfTUdSX0ZLIiBGT1JFSUdOIEtFWSAoIk1HUiIpCgkgIFJFRkVSRU5DRVMgIkVCQV9ERU1PX0NBUkRfRU1QIiAoIkVNUE5PIikgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+instrument_fk1_ref_constraint.xml::ab6208c466989b47c965683b3c936a97a6d00b58::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'ab6208c466989b47c965683b3c936a97a6d00b58';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'instrument_fk1_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIklOU1RSVU1FTlRfSElTVCIgQUREIENPTlNUUkFJTlQgIklOU1RSVU1FTlRfRksxIiBGT1JFSUdOIEtFWSAoIlNUT0NLX0NPREUiKQoJICBSRUZFUkVOQ0VTICJJTlNUUlVNRU5UIiAoIlNZTUJPTCIpIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_tasks_fk_ref_constraint.xml::0154032201182df07fa706cca01cd3356e9e3447::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '0154032201182df07fa706cca01cd3356e9e3447';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'eba_demo_chart_tasks_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NIQVJUX1RBU0tTIiBBREQgQ09OU1RSQUlOVCAiRUJBX0RFTU9fQ0hBUlRfVEFTS1NfRksiIEZPUkVJR04gS0VZICgiUFJPSkVDVCIpCgkgIFJFRkVSRU5DRVMgIkVCQV9ERU1PX0NIQVJUX1BST0pFQ1RTIiAoIklEIikgT04gREVMRVRFIENBU0NBREUgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+d_craftsharp_d_ba_instrumen_fk_ref_constraint.xml::d15f54951fbb187ebf9e5d089439103e24bde534::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'd15f54951fbb187ebf9e5d089439103e24bde534';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'd_craftsharp_d_ba_instrumen_fk_ref_constraint.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkRfQkFSUyIgQUREIENPTlNUUkFJTlQgIkRfQ1JBRlRTSEFSUF9EX0JBX0lOU1RSVU1FTl9GSyIgRk9SRUlHTiBLRVkgKCJJTlNUUlVNRU5UX0lEIikKCSAgUkVGRVJFTkNFUyAiRF9JTlNUUlVNRU5UUyIgKCJJRCIpIE9OIERFTEVURSBDQVNDQURFIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+ref_constraint0.xml::a982a90415b56c1324eb7bb0acf610664a939f89::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'a982a90415b56c1324eb7bb0acf610664a939f89';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'ref_constraint0.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVNUCIgQUREIEZPUkVJR04gS0VZICgiTUdSIikKCSAgUkVGRVJFTkNFUyAiRU1QIiAoIkVNUE5PIikgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+ref_constraint1.xml::b3ef5a35d0c0ceea1642799562af1d3887624a86::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'b3ef5a35d0c0ceea1642799562af1d3887624a86';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'ref_constraint1.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVNUCIgQUREIEZPUkVJR04gS0VZICgiREVQVE5PIikKCSAgUkVGRVJFTkNFUyAiREVQVCIgKCJERVBUTk8iKSBFTkFCTEU=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+ref_constraint2.xml::31bf7c92323afa1254076f828cc0ea8ac35fb466::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '31bf7c92323afa1254076f828cc0ea8ac35fb466';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'ref_constraint2.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{QUxURVIgVEFCTEUgIkVCQV9ERU1PX0NIQVJUX0VNUCIgQUREIEZPUkVJR04gS0VZICgiTUdSIikKCSAgUkVGRVJFTkNFUyAiRUJBX0RFTU9fQ0hBUlRfRU1QIiAoIkVNUE5PIikgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_stats_1_index.xml::cdbb19b2eaf7f3377320e6bc6bb52a221e0dd51c::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_STATS_1" ON "EBA_DEMO_CHART_STATS" ("EMPLOYEE")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_emp_2_index.xml::382f1a99ae1cb06ca1a90d2476511dc4542ab67b::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_EMP_2" ON "EBA_DEMO_CHART_EMP" ("DEPTNO")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_tasks_idx1_index.xml::55c316370f61204dc5b6711a24e78c75151fed12::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_TASKS_IDX1" ON "EBA_DEMO_CHART_TASKS" ("PROJECT")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_prod_1_index.xml::d58235c075ba5c7447f3a3742ce3d845caedced7::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_PROD_1" ON "EBA_DEMO_CHART_PRODUCTS" ("LIST_PRICE")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_ord_2_index.xml::475c1af9ecc59da9e8c639e0676829aec7b0ecae::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_ORD_2" ON "EBA_DEMO_CHART_ORDERS" ("PRODUCT_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_ord_1_index.xml::ee3a3e04c9d578b93d352afecbefdb2b6bf7b5bb::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_ORD_1" ON "EBA_DEMO_CHART_ORDERS" ("QUANTITY")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_emp_1_index.xml::06ea659b508a4f05b62b5d353a4e723877f583a8::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_EMP_1" ON "EBA_DEMO_CHART_EMP" ("MGR")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_stats_2_index.xml::eac27f5c8470229c6aeeecd62242c07f9e7deebd::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_STATS_2" ON "EBA_DEMO_CHART_STATS" ("EMPLOYER")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_stats_3_index.xml::ab353209763b25998681eb8d833c4651d0a73f2e::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_STATS_3" ON "EBA_DEMO_CHART_STATS" ("TOTAL")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+d_craftsharp_d_bars_i1_index.xml::b7934c51deda8f2c06e7a4a11b59c8128eea2a36::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "D_CRAFTSHARP_D_BARS_I1" ON "D_BARS" ("INSTRUMENT_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_sample_idx1_index.xml::6f44328ac7e9fe3979bcad3e2f01f200972cee0a::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_SAMPLE_IDX1" ON "EBA_DEMO_CHART_SAMPLE_DATA" ("SAMPLE_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+eba_demo_chart_bball_1_index.xml::cc1c1ba6b9788503f21354a551f7a019430e19fe::(CRAFTSHARP)-Generated
+
+Error starting at line : 1 in command -
+CREATE INDEX "EBA_DEMO_CHART_BBALL_1" ON "EBA_DEMO_CHART_BBALL" ("WINS")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_1800792059187979"
+Error report -
+ORA-00959: tablespace 'APEX_1800792059187979' does not exist
+00959. 00000 -  "tablespace '%s' does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_proj_trigger.xml::552454be90a44fe467abefeb9e118aba4741aa28::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '552454be90a44fe467abefeb9e118aba4741aa28';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_proj_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1BST0oiIAogICBiZWZvcmUgaW5zZXJ0IG9yIHVwZGF0ZSBvbiBlYmFfZGVtb19jaGFydF9wcm9qZWN0cwogICBmb3IgZWFjaCByb3cgCmJlZ2luICAKICAgaWYgOm5ldy4iSUQiIGlzIG51bGwgdGhlbgogICAgIHNlbGVjdCB0b19udW1iZXIoc3lzX2d1aWQoKSwnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSBpbnRvIDpuZXcuaWQgZnJvbSBkdWFsOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LmNyZWF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LmNyZWF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyBvciB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gMTsKICAgZWxzaWYgdXBkYXRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gbnZsKDpvbGQucm93X3ZlcnNpb25fbnVtYmVyLDEpICsgMTsKICAgZW5kIGlmOwplbmQ7CgovCkFMVEVSIFRSSUdHRVIgIkJJVV9FQkFfREVNT19DSEFSVF9QUk9KIiBFTkFCTEU=}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_bball_trigger.xml::0ecf1d5a7c377868d1bd9161c1fa1933c362de39::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '0ecf1d5a7c377868d1bd9161c1fa1933c362de39';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_bball_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX0JCQUxMIiAKICAgYmVmb3JlIGluc2VydCBvciB1cGRhdGUgb24gZWJhX2RlbW9fY2hhcnRfYmJhbGwKICAgZm9yIGVhY2ggcm93CmJlZ2luICAKICAgaWYgOm5ldy4iSUQiIGlzIG51bGwgdGhlbgogICAgIHNlbGVjdCB0b19udW1iZXIoc3lzX2d1aWQoKSwnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSBpbnRvIDpuZXcuaWQgZnJvbSBkdWFsOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LmNyZWF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LmNyZWF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyBvciB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwplbmQ7CgovCkFMVEVSIFRSSUdHRVIgIkJJVV9FQkFfREVNT19DSEFSVF9CQkFMTCIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_orders_trigger.xml::bff85c53add5c41adac6d0fd23bddfbcb5edb353::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'bff85c53add5c41adac6d0fd23bddfbcb5edb353';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_orders_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX09SREVSUyIgCiAgIGJlZm9yZSBpbnNlcnQgb3IgdXBkYXRlIG9uIGViYV9kZW1vX2NoYXJ0X29yZGVycwogICBmb3IgZWFjaCByb3cKYmVnaW4gIAogICBpZiA6bmV3LiJPUkRFUl9JRCIgaXMgbnVsbCB0aGVuCiAgICAgc2VsZWN0IHRvX251bWJlcihzeXNfZ3VpZCgpLCdYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWCcpIGludG8gOm5ldy5vcmRlcl9pZCBmcm9tIGR1YWw7CiAgIGVuZCBpZjsKICAgaWYgaW5zZXJ0aW5nIHRoZW4KICAgICAgIDpuZXcuY3JlYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcuY3JlYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICAgICAgOm5ldy51cGRhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy51cGRhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgIGVuZCBpZjsKICAgaWYgaW5zZXJ0aW5nIG9yIHVwZGF0aW5nIHRoZW4KICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CmVuZDsKCi8KQUxURVIgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX09SREVSUyIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_pop_trigger.xml::f5c05e7e71e4cc0cc8339b81e3ac84c24ab4661e::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'f5c05e7e71e4cc0cc8339b81e3ac84c24ab4661e';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_pop_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1BPUCIgCiAgIGJlZm9yZSBpbnNlcnQgb3IgdXBkYXRlIG9uIGViYV9kZW1vX2NoYXJ0X3BvcHVsYXRpb24KICAgZm9yIGVhY2ggcm93CmJlZ2luICAKICAgaWYgOm5ldy4iSUQiIGlzIG51bGwgdGhlbgogICAgIHNlbGVjdCB0b19udW1iZXIoc3lzX2d1aWQoKSwnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSBpbnRvIDpuZXcuaWQgZnJvbSBkdWFsOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LmNyZWF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LmNyZWF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyBvciB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gMTsKICAgZWxzaWYgdXBkYXRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gbnZsKDpvbGQucm93X3ZlcnNpb25fbnVtYmVyLDEpICsgMTsKICAgZW5kIGlmOwplbmQ7CgovCkFMVEVSIFRSSUdHRVIgIkJJVV9FQkFfREVNT19DSEFSVF9QT1AiIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_tasks_trigger.xml::6ead6b679d8835fcf086d09312511d44a5d888bd::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '6ead6b679d8835fcf086d09312511d44a5d888bd';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_tasks_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1RBU0tTIiAKICAgYmVmb3JlIGluc2VydCBvciB1cGRhdGUgb24gZWJhX2RlbW9fY2hhcnRfdGFza3MKICAgZm9yIGVhY2ggcm93CmJlZ2luICAKICAgaWYgOm5ldy4iSUQiIGlzIG51bGwgdGhlbgogICAgIHNlbGVjdCB0b19udW1iZXIoc3lzX2d1aWQoKSwnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSBpbnRvIDpuZXcuaWQgZnJvbSBkdWFsOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LmNyZWF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LmNyZWF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyBvciB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gMTsKICAgZWxzaWYgdXBkYXRpbmcgdGhlbgogICAgICAgOm5ldy5yb3dfdmVyc2lvbl9udW1iZXIgOj0gbnZsKDpvbGQucm93X3ZlcnNpb25fbnVtYmVyLDEpICsgMTsKICAgZW5kIGlmOwplbmQ7CgovCkFMVEVSIFRSSUdHRVIgIkJJVV9FQkFfREVNT19DSEFSVF9UQVNLUyIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_stocks_trigger.xml::eb9557d6ca78ee808116abf060e2f2b37cfc14ea::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'eb9557d6ca78ee808116abf060e2f2b37cfc14ea';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_stocks_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1NUT0NLUyIgCiAgIGJlZm9yZSBpbnNlcnQgb3IgdXBkYXRlIG9uIGViYV9kZW1vX2NoYXJ0X3N0b2NrcwogICBmb3IgZWFjaCByb3cKYmVnaW4gIAogICBpZiA6bmV3LiJJRCIgaXMgbnVsbCB0aGVuCiAgICAgc2VsZWN0IHRvX251bWJlcihzeXNfZ3VpZCgpLCdYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWCcpIGludG8gOm5ldy5pZCBmcm9tIGR1YWw7CiAgIGVuZCBpZjsKICAgaWYgaW5zZXJ0aW5nIHRoZW4KICAgICAgIDpuZXcuY3JlYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcuY3JlYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICAgICAgOm5ldy51cGRhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy51cGRhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgIGVuZCBpZjsKICAgaWYgaW5zZXJ0aW5nIG9yIHVwZGF0aW5nIHRoZW4KICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LnJvd192ZXJzaW9uX251bWJlciA6PSAxOwogICBlbHNpZiB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnJvd192ZXJzaW9uX251bWJlciA6PSBudmwoOm9sZC5yb3dfdmVyc2lvbl9udW1iZXIsMSkgKyAxOwogICBlbmQgaWY7CmVuZDsKCi8KQUxURVIgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1NUT0NLUyIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+dept_trg1_trigger.xml::52e0b274b6c023673d417cddf36b63265e693e4a::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '52e0b274b6c023673d417cddf36b63265e693e4a';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'dept_trg1_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiREVQVF9UUkcxIiAKICAgICAgICAgICAgICBiZWZvcmUgaW5zZXJ0IG9uIGRlcHQKICAgICAgICAgICAgICBmb3IgZWFjaCByb3cKICAgICAgICAgICAgICBiZWdpbgogICAgICAgICAgICAgICAgICBpZiA6bmV3LmRlcHRubyBpcyBudWxsIHRoZW4KICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdCBkZXB0X3NlcS5uZXh0dmFsIGludG8gOm5ldy5kZXB0bm8gZnJvbSBzeXMuZHVhbDsKICAgICAgICAgICAgICAgICBlbmQgaWY7CiAgICAgICAgICAgICAgZW5kOwovCkFMVEVSIFRSSUdHRVIgIkRFUFRfVFJHMSIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_sample_data_trigger.xml::b156e448c698ca499f8b2706b5df9a94c945fd61::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'b156e448c698ca499f8b2706b5df9a94c945fd61';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_sample_data_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1NBTVBMRV9EQVRBIiAKICAgYmVmb3JlIGluc2VydCBvciB1cGRhdGUgb24gZWJhX2RlbW9fY2hhcnRfc2FtcGxlX2RhdGEKICAgZm9yIGVhY2ggcm93IApiZWdpbiAgCiAgIGlmIDpuZXcuIklEIiBpcyBudWxsIHRoZW4KICAgICBzZWxlY3QgdG9fbnVtYmVyKHN5c19ndWlkKCksJ1hYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYJykgaW50byA6bmV3LmlkIGZyb20gZHVhbDsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgdGhlbgogICAgICAgOm5ldy5jcmVhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy5jcmVhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgb3IgdXBkYXRpbmcgdGhlbgogICAgICAgOm5ldy51cGRhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy51cGRhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgIGVuZCBpZjsKZW5kOwoKLwpBTFRFUiBUUklHR0VSICJCSVVfRUJBX0RFTU9fQ0hBUlRfU0FNUExFX0RBVEEiIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+emp_trg1_trigger.xml::c51fb9c821d733b0b841f6bd75df44ac15f0818b::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'c51fb9c821d733b0b841f6bd75df44ac15f0818b';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'emp_trg1_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiRU1QX1RSRzEiIAogICAgICAgICAgICAgIGJlZm9yZSBpbnNlcnQgb24gZW1wCiAgICAgICAgICAgICAgZm9yIGVhY2ggcm93CiAgICAgICAgICAgICAgYmVnaW4KICAgICAgICAgICAgICAgICAgaWYgOm5ldy5lbXBubyBpcyBudWxsIHRoZW4KICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdCBlbXBfc2VxLm5leHR2YWwgaW50byA6bmV3LmVtcG5vIGZyb20gc3lzLmR1YWw7CiAgICAgICAgICAgICAgICAgZW5kIGlmOwogICAgICAgICAgICAgIGVuZDsKLwpBTFRFUiBUUklHR0VSICJFTVBfVFJHMSIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_stats_trigger.xml::5961eb6bd230b13067f22ae6190587d9f27e0c96::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '5961eb6bd230b13067f22ae6190587d9f27e0c96';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_stats_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1NUQVRTIiAKICAgYmVmb3JlIGluc2VydCBvciB1cGRhdGUgb24gZWJhX2RlbW9fY2hhcnRfc3RhdHMKICAgZm9yIGVhY2ggcm93CmJlZ2luICAKICAgaWYgOm5ldy4iSUQiIGlzIG51bGwgdGhlbgogICAgIHNlbGVjdCB0b19udW1iZXIoc3lzX2d1aWQoKSwnWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFgnKSBpbnRvIDpuZXcuaWQgZnJvbSBkdWFsOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyB0aGVuCiAgICAgICA6bmV3LmNyZWF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LmNyZWF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgICAgIDpuZXcudXBkYXRlZCA6PSBjdXJyZW50X3RpbWVzdGFtcDsKICAgICAgIDpuZXcudXBkYXRlZF9ieSA6PSBudmwod3d2X2Zsb3cuZ191c2VyLHVzZXIpOwogICBlbmQgaWY7CiAgIGlmIGluc2VydGluZyBvciB1cGRhdGluZyB0aGVuCiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwplbmQ7CgovCkFMVEVSIFRSSUdHRVIgIkJJVV9FQkFfREVNT19DSEFSVF9TVEFUUyIgRU5BQkxF}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+biu_eba_demo_chart_products_trigger.xml::93ada76026d2be138393d73b561d5111bf0ee6f4::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := '93ada76026d2be138393d73b561d5111bf0ee6f4';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'biu_eba_demo_chart_products_trigger.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgVFJJR0dFUiAiQklVX0VCQV9ERU1PX0NIQVJUX1BST0RVQ1RTIiAKICAgYmVmb3JlIGluc2VydCBvciB1cGRhdGUgb24gZWJhX2RlbW9fY2hhcnRfcHJvZHVjdHMKICAgZm9yIGVhY2ggcm93CmJlZ2luICAKICAgaWYgOm5ldy4iUFJPRFVDVF9JRCIgaXMgbnVsbCB0aGVuCiAgICAgc2VsZWN0IHRvX251bWJlcihzeXNfZ3VpZCgpLCdYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWCcpIGludG8gOm5ldy5wcm9kdWN0X2lkIGZyb20gZHVhbDsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgdGhlbgogICAgICAgOm5ldy5jcmVhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy5jcmVhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgICAgICA6bmV3LnVwZGF0ZWQgOj0gY3VycmVudF90aW1lc3RhbXA7CiAgICAgICA6bmV3LnVwZGF0ZWRfYnkgOj0gbnZsKHd3dl9mbG93LmdfdXNlcix1c2VyKTsKICAgZW5kIGlmOwogICBpZiBpbnNlcnRpbmcgb3IgdXBkYXRpbmcgdGhlbgogICAgICAgOm5ldy51cGRhdGVkIDo9IGN1cnJlbnRfdGltZXN0YW1wOwogICAgICAgOm5ldy51cGRhdGVkX2J5IDo9IG52bCh3d3ZfZmxvdy5nX3VzZXIsdXNlcik7CiAgIGVuZCBpZjsKZW5kOwoKLwpBTFRFUiBUUklHR0VSICJCSVVfRUJBX0RFTU9fQ0hBUlRfUFJPRFVDVFMiIEVOQUJMRQ==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################
+package_body_bad_0.xml::c9ff081ede016f7741ee03ec8737a0d822d48ddb::(CRAFTSHARP)-Generated
+liquibase.exception.DatabaseException: 
+Error starting at line : 2 in command -
+ DECLARE 
+ id varchar2(200) := 'c9ff081ede016f7741ee03ec8737a0d822d48ddb';
+ rawAction clob;
+ rawSxml clob;
+ myrow varchar2(2000);
+ action clob := '';
+ sxml clob := '';
+ dep varchar2(200) := '5318572970';
+ author varchar2(200) := '(CRAFTSHARP)-Generated';
+ filename varchar2(200) := 'package_body_bad_0.xml';
+ insertlog varchar2(200) := 'insert into DATABASECHANGELOG_ACTIONS (id,author,filename,sql,sxml,deployment_id) values (:id,:author,:filename,:action,:sxml,:dep) returning rowid into :out';
+ updateaction varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sql = sql ||:action where rowid = :myrow ';
+ updatesxml varchar2(200) := 'update DATABASECHANGELOG_ACTIONS set sxml = sxml ||:sxml where rowid = :myrow ';
+ begin 
+action := utl_raw.cast_to_varchar2(utl_encode.base64_decode(utl_raw.cast_to_raw(q'{Q1JFQVRFIE9SIFJFUExBQ0UgRURJVElPTkFCTEUgUEFDS0FHRSBCT0RZICJEX0lOU1RSVU1FTlRTX0FQSSIgCmlzIAogIAogICAgcHJvY2VkdXJlIGdldF9yb3cgKCAKICAgICAgICBwX2lkICAgICAgICAgICAgICAgICAgICAgICAgICAgaW4gbnVtYmVyLCAKICAgICAgICBQX2tleSAgICAgICAgICAgICAgICAgICAgICAgICAgb3V0IHZhcmNoYXIyLCAKICAgICAgICBQX2NhdGVnb3J5ICAgICAgICAgICAgICAgICAgICAgb3V0IHZhcmNoYXIyLCAKICAgICAgICBQX2N1cnJlbmN5ICAgICAgICAgICAgICAgICAgICAgb3V0IHZhcmNoYXIyLCAKICAgICAgICBQX3doZW4gICAgICAgICAgICAgICAgICAgICAgICAgb3V0IGRhdGUgCiAgICApIAogICAgaXMgCiAgICBiZWdpbiAKICAgICAgICBmb3IgYzEgaW4gKHNlbGVjdCAqIGZyb20gY3JhZnRzaGFycC5kX2luc3RydW1lbnRzIHdoZXJlIGlkID0gcF9pZCkgbG9vcCAKICAgICAgICAgICAgcF9rZXkgOj0gYzEua2V5OyAKICAgICAgICAgICAgcF9jYXRlZ29yeSA6PSBjMS5jYXRlZ29yeTsgCiAgICAgICAgICAgIHBfY3VycmVuY3kgOj0gYzEuY3VycmVuY3k7IAogICAgICAgICAgICBwX3doZW4gOj0gYzEud2hlbjsgCiAgICAgICAgZW5kIGxvb3A7IAogICAgZW5kIGdldF9yb3c7IAogCiAgCiAgICBwcm9jZWR1cmUgaW5zZXJ0X3JvdyAgKCAKICAgICAgICBwX2lkICAgICAgICAgICAgICAgICAgICAgICAgICAgaW4gbnVtYmVyIGRlZmF1bHQgbnVsbCwgCiAgICAgICAgcF9rZXkgICAgICAgICAgICAgICAgICAgICAgICAgIGluIHZhcmNoYXIyIGRlZmF1bHQgbnVsbCwgCiAgICAgICAgcF9jYXRlZ29yeSAgICAgICAgICAgICAgICAgICAgIGluIHZhcmNoYXIyIGRlZmF1bHQgbnVsbCwgCiAgICAgICAgcF9jdXJyZW5jeSAgICAgICAgICAgICAgICAgICAgIGluIHZhcmNoYXIyIGRlZmF1bHQgbnVsbCwgCiAgICAgICAgcF93aGVuICAgICAgICAgICAgICAgICAgICAgICAgIGluIGRhdGUgZGVmYXVsdCBudWxsIAogICAgKSAKICAgIGlzIAogICAgYmVnaW4gCiAgICAgICAgaW5zZXJ0IGludG8gY3JhZnRzaGFycC5kX2luc3RydW1lbnRzICggCiAgICAgICAgICAgIGlkLCAKICAgICAgICAgICAga2V5LCAKICAgICAgICAgICAgY2F0ZWdvcnksIAogICAgICAgICAgICBjdXJyZW5jeSwgCiAgICAgICAgICAgIHdoZW4gCiAgICAgICAgKSB2YWx1ZXMgKCAKICAgICAgICAgICAgcF9pZCwgCiAgICAgICAgICAgIHBfa2V5LCAKICAgICAgICAgICAgcF9jYXRlZ29yeSwgCiAgICAgICAgICAgIHBfY3VycmVuY3ksIAogICAgICAgICAgICBwX3doZW4gCiAgICAgICAgKTsgCiAgICBlbmQgaW5zZXJ0X3JvdzsgCiAKICAgIHByb2NlZHVyZSB1cGRhdGVfcm93ICAoIAogICAgICAgIHBfaWQgICAgICAgICAgICAgICAgICAgICAgICAgICBpbiBudW1iZXIgZGVmYXVsdCBudWxsLCAKICAgICAgICBwX2tleSAgICAgICAgICAgICAgICAgICAgICAgICAgaW4gdmFyY2hhcjIgZGVmYXVsdCBudWxsLCAKICAgICAgICBwX2NhdGVnb3J5ICAgICAgICAgICAgICAgICAgICAgaW4gdmFyY2hhcjIgZGVmYXVsdCBudWxsLCAKICAgICAgICBwX2N1cnJlbmN5ICAgICAgICAgICAgICAgICAgICAgaW4gdmFyY2hhcjIgZGVmYXVsdCBudWxsLCAKICAgICAgICBwX3doZW4gICAgICAgICAgICAgICAgICAgICAgICAgaW4gZGF0ZSBkZWZhdWx0IG51bGwgCiAgICApIAogICAgaXMgCiAgICBiZWdpbiAKICAgICAgICB1cGRhdGUgIGNyYWZ0c2hhcnAuZF9pbnN0cnVtZW50cyBzZXQgIAogICAgICAgICAgICBpZCA9IHBfaWQsIAogICAgICAgICAgICBrZXkgPSBwX2tleSwgCiAgICAgICAgICAgIGNhdGVnb3J5ID0gcF9jYXRlZ29yeSwgCiAgICAgICAgICAgIGN1cnJlbmN5ID0gcF9jdXJyZW5jeSwgCiAgICAgICAgICAgIHdoZW4gPSBwX3doZW4gCiAgICAgICAgd2hlcmUgaWQgPSBwX2lkOyAKICAgIGVuZCB1cGRhdGVfcm93OyAKIAogICAgcHJvY2VkdXJlIGRlbGV0ZV9yb3cgKCAKICAgICAgICBwX2lkICAgICAgICAgICAgICAgICAgICAgICAgICAgaW4gbnVtYmVyIAogICAgKSAKICAgIGlzIAogICAgYmVnaW4gCiAgICAgICAgZGVsZXRlIGZyb20gY3JhZnRzaGFycC5kX2luc3RydW1lbnRzIHdoZXJlIGlkID0gcF9pZDsgCiAgICBlbmQgZGVsZXRlX3JvdzsgCiAKZW5kIGRfaW5zdHJ1bWVudHNfYXBpOw==}')));
+ execute immediate insertlog using id,author,filename,action,sxml,dep returning into myrow;
+end;
+Error report -
+ORA-00942: table or view does not exist
+ORA-06512: at line 16
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+######## END ERROR SUMMARY ##################

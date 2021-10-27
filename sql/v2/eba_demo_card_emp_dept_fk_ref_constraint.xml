@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="5d51999f7250affe060b0fd79075e361cbd1dde5" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOracleRefConstraint objectName="EBA_DEMO_CARD_EMP_DEPT_FK" objectType="REF_CONSTRAINT" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "FINTECH"."EBA_DEMO_CARD_EMP" ADD CONSTRAINT "EBA_DEMO_CARD_EMP_DEPT_FK" FOREIGN KEY ("DEPTNO")
+	  REFERENCES "FINTECH"."EBA_DEMO_CARD_DEPT" ("DEPTNO") ENABLE]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>

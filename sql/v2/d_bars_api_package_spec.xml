@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="46face76eb33e7bf3a4ed6c91f1beb300bc363d9" author="(FINTECH)-Generated" failOnError="false"    >
+		<n0:createOraclePackageSpec objectName="D_BARS_API" objectType="PACKAGE_SPEC" ownerName="FINTECH"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE PACKAGE "FINTECH"."D_BARS_API" 
+is 
+  
+    /* example: 
+        declare 
+            l_instrument_id                 number; 
+            l_t                             timestamp; 
+            l_bid                           number; 
+            l_ask                           number; 
+            l_volume                        number; 
+            l_open                          number; 
+            l_high                          number; 
+            l_low                           number; 
+            l_close                         number; 
+            l_vwap                          number; 
+        begin 
+        d_bars_api.get_row ( 
+            p_id                            => 1, 
+            p_instrument_id                 => l_instrument_id, 
+            p_t                             => l_t, 
+            p_bid                           => l_bid, 
+            p_ask                           => l_ask, 
+            p_volume                        => l_volume, 
+            p_open                          => l_open, 
+            p_high                          => l_high, 
+            p_low                           => l_low, 
+            p_close                         => l_close, 
+            p_vwap                          => l_vwap 
+            ); 
+        end; 
+    */ 
+
+    procedure get_row ( 
+        p_id                           in number, 
+        P_instrument_id                out number, 
+        P_t                            out timestamp, 
+        P_bid                          out number, 
+        P_ask                          out number, 
+        P_volume                       out number, 
+        P_open                         out number, 
+        P_high                         out number, 
+        P_low                          out number, 
+        P_close                        out number, 
+        P_vwap                         out number 
+    ); 
+
+    /* example: 
+        begin 
+        d_bars_api.insert_row ( 
+            p_id                          => null, 
+            p_instrument_id               => null, 
+            p_t                           => null, 
+            p_bid                         => null, 
+            p_ask                         => null, 
+            p_volume                      => null, 
+            p_open                        => null, 
+            p_high                        => null, 
+            p_low                         => null, 
+            p_close                       => null, 
+            p_vwap                        => null 
+            ); 
+        end; 
+    */ 
+
+    procedure insert_row  ( 
+        p_id                           in number default null, 
+        p_instrument_id                in number default null, 
+        p_t                            in timestamp default null, 
+        p_bid                          in number default null, 
+        p_ask                          in number default null, 
+        p_volume                       in number default null, 
+        p_open                         in number default null, 
+        p_high                         in number default null, 
+        p_low                          in number default null, 
+        p_close                        in number default null, 
+        p_vwap                         in number default null 
+    ); 
+    procedure update_row  ( 
+        p_id                           in number default null, 
+        p_instrument_id                in number default null, 
+        p_t                            in timestamp default null, 
+        p_bid                          in number default null, 
+        p_ask                          in number default null, 
+        p_volume                       in number default null, 
+        p_open                         in number default null, 
+        p_high                         in number default null, 
+        p_low                          in number default null, 
+        p_close                        in number default null, 
+        p_vwap                         in number default null 
+    ); 
+    procedure delete_row ( 
+        p_id                           in number 
+    ); 
+end d_bars_api;]]></n0:source>
+		</n0:createOraclePackageSpec>
+	</changeSet>
+</databaseChangeLog>
